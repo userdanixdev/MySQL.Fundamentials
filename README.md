@@ -47,7 +47,8 @@ Existe uma versão parecida com o MySql, conhecida como MariaDB.
 Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
 ```
 > ***
-# Estrutura Geral 
+# Estrutura Geral de um BD.
+***
 
 1. DDL (_Data definition language_) - Linguagem de Definição de Dados ( Estrutura ).
 1. DML (_Data Manipulation Language_) - Linguagem de Manipulação de dados.
@@ -62,3 +63,4 @@ As transações seguem os princípios de:
    Consistência - _Dados íntegro_ 
    Atomicidade - _Tudo ou nada_ 
   ```
+  ***
