@@ -40,7 +40,7 @@ A principal linguagem utilizada para interagir é a `Structured Query Language`o
 **_Mas é possível integrar outras linguagens de programação._**
 
 Dentro de vários bancos de dados o MySql é popular, gratuito, licenciado, livre (_opensource_) e pertence a ORACLE atualmente.
-Muitas empresas privadas e públicas grandes e multinacionais utilizam o MySQL para base de dados.
+Muitas empresas multinacionais utilizam o MySQL para gerenciar sua base de dados.
 
 ```
 Existe uma versão parecida com o MySql, conhecida como MariaDB.
@@ -59,9 +59,9 @@ Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
 ```
 As transações seguem os princípios de:
    Durabilidade - _dado autêntico_  
-   Isolamento - _Sem interferências_
-   Consistência - _Dados íntegro_ 
-   Atomicidade - _Tudo ou nada_ 
+   Isolamento - _sem interferências_
+   Consistência - _dados íntegros_ 
+   Atomicidade - _tudo ou nada_ 
   ```
   ***
   # WORK BENCH 
