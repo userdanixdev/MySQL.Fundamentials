@@ -2,12 +2,14 @@
 ### _Tutorials_
 ***
  
-![logo MySQL](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/326213a4-2f2f-4cb9-b109-6ab37670cb7c)
+![logo MySQL](https://www.mysql.com/)
+![cursoemvideologo](https://www.youtube.com/watch?v=Ofktsne-utM)
+
  ***
 
 1. Nesse repositório contem os primeiros comandos de banco de dados MySql.
 1. Curso ministrado pelo tutor Gustavo Guanabara do Curso em vídeo.
-1. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
+1. Segue seu canal do Youtube: [Curso em vídeo] (https://www.youtube.com/watch?v=Ofktsne-utM)
 1. Suas aulas são bem didáticas e descontraídas. 
 1. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara._
 
