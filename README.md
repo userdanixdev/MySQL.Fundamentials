@@ -40,6 +40,8 @@ A principal linguagem utilizada para interagir é a `Structured Query Language`o
 **_Mas é possível integrar outras linguagens de programação._**
 
 Dentro de vários bancos de dados o MySql é popular, gratuito, licenciado, livre (_opensource_) e pertence a ORACLE atualmente.
+Muitas empresas privadas e públicas grandes e multinacionais utilizam o MySQL para base de dados.
+
 ```
 Existe uma versão parecida com o MySql, conhecida como MariaDB.
 Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
@@ -47,13 +49,16 @@ Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
 > ***
 # Estrutura Geral 
 
-1. DDL -  Definição ( Estrutura )
-1. DML - Manipulação
-1. DQL - Solicitações 
-1. DCL - Controle ( Acessos)
-1. DTL - Transações
+1. DDL (_Data definition language_) - Linguagem de Definição de Dados ( Estrutura ).
+1. DML (_Data Manipulation Language_) - Linguagem de Manipulação de dados.
+1. DQL (_Data Query Language_) - Linguagem de Consulta de dados como: Solicitações, Leitura, consulta. 
+1. DCL (_Data Control Language_) - Linguagem de Controle para concessão, permissão e controle de acessos.
+1. DTL (_Data Transaction Language_) - Linguagem de Transação de Dados - Realiza diferentes transaçõe ocorridas dentro do BD.
 
-  * Durabilidade
-  * Isolamento
-  * Consistência
-  * Atômicidade
+```
+As transações seguem os princípios de:
+   Durabilidade - _dado autêntico_  
+   Isolamento - _Sem interferências_
+   Consistência - _Dados íntegro_ 
+   Atomicidade - _Tudo ou nada_ 
+  ```
