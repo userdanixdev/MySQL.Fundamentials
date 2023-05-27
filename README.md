@@ -64,3 +64,18 @@ As transações seguem os princípios de:
    Atomicidade - _Tudo ou nada_ 
   ```
   ***
+  # WORK BENCH 
+  ***
+  ## Ferramenta necessária para acessar o ambiente MySQL.
+  ### _Evita o uso de linhas de comandos no CMD_.
+  #### **_Irá ajudar de forma prática no aprendizado_**
+  ***
+  É necessária a instalação de pacotes distribuíveis, servidores e interface VISUAL STUDIO CODE ATUAL para uso do `work bench`
+  Encontrados nos sites:
+  * _https://www.microsoft.com/pt-br/download/developer-tools.aspx_ `Pacotes`
+  * _https://dev.mysql.com/downloads/workbench/_ `Workbench`
+  * _https://sourceforge.net/projects/wampserver/_  `WAMP Server´`
+  
+   #### Esses sites estão sujeitos a alterações e atualizações sem aviso nenhum.
+   ***
+   
