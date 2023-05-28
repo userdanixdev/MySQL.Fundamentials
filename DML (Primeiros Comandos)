@@ -10,7 +10,10 @@ nacionalidade `varchar(20)
 );
 describe pessoas;
 
+________________________________________________________________________________________________________
+
 //Esse são os primeiros comandos basicos de um banco de dados MySQL//
+_______________________________________________________________________________________________________
 
 TIPOS PRIMTITIVOS:
 - Numéricos = Inteiros; Reais e lógicos.
@@ -31,7 +34,22 @@ eNUM,(SET) ou conjuntos para Coleções;
 - TIPO PRIMITIVO = Espacial: ( Usado nas versões mais recentes do MYSQL)
 Geometry; Point; Polygon; Multpolygon para tipo primitivo espacial.
 
-// Precisão : É importante dimensionar bem a estrutura da tabela.//
+// Precisão : É importante dimensionar bem a estrutura da tabela. //
+
+________________________________________________________________________________________________________________
+
+Passo a passo:
+
+CREATE DATABASE: Cria o banco de dados com o nome do banco desejado mais o ponto vírgula.
+Para criar a tabela digita-se na interface,o nome CREATE TABLE, com o nome pessoas e abre parênteses para atribuir conforme o código 
+acima.
+O comando DESCRIBE, abre na linha de comando, a descrição de qualquer coisa que você criou, seja uma tabela ou base de dados.
+O comando EXIT sai da linha de comando.
+O comando STATUS nos mostra o que foi criado e aonde está endereçado, juntamente com outros dados não pertinentes ao banco de dados
+como informações sobre endereços de dados, do sistema, protocolose  e etc.
+
+___________________________________________________________________________________________________________________
+
 
 
 
