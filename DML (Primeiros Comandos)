@@ -43,13 +43,17 @@ Passo a passo:
 CREATE DATABASE: Cria o banco de dados com o nome do banco desejado mais o ponto vírgula.
 Para criar a tabela digita-se na interface,o nome CREATE TABLE, com o nome pessoas e abre parênteses para atribuir conforme o código 
 acima.
-O comando DESCRIBE, na linha de comando, a descrição de qualquer coisa que você criou, seja uma tabela ou base de dados.
+O comando DESCRIBE, na linha de comando, mostra a descrição de qualquer coisa que você criou por exemplo: uma tabela.
+( MOSTRA A TABELA CRIADA NO AMBIENTE MYSQL WORKBANCH )
 O comando EXIT sai da linha de comando.
 O comando STATUS nos mostra o que foi criado e aonde está endereçado inclusive que banco de dados está sendo usado atualmente (current)
-juntamente com outros dados não pertinentes ao banco de dados como informações sobre endereços de dados, do sistema, protocolose, 
+juntamente com vários outros dados não pertinentes ao banco de dados como informações sobre endereços de dados, do sistema, protocolose, 
 serviços, endereços e etc.
 O comando SHOW nos mostra o que foi criado ao ser digitado seguido do que foi criado.Por exemplo: se foi criado uma TABELA.
-
+SHOW DATABASES; Mostra quais bancos de dados foram criados.
+SHOW TABLES; Para mostrar na tela quais são as tabelas criadas que está alocado na memória.
+( NO CASO IRÁ MOSTRAR SOMENTE A TABELA PESSOAS, CRIADA COM O COMANDO ACIMA. )
+O comando USE adiciona no endereço de memória o banco de dados e fica pronto pra uso atual ou corrente.
 ___________________________________________________________________________________________________________________
 
 
