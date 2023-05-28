@@ -10,5 +10,28 @@ nacionalidade `varchar(20)
 );
 describe pessoas;
 
-//Esse são os primeiros comandos de um banco de dados MySQL//
+//Esse são os primeiros comandos basicos de um banco de dados MySQL//
+
+TIPOS PRIMTITIVOS:
+- Numéricos = Inteiros; Reais e lógicos.
+Numéricos: 
+Inteiros ; Reais ; Lógicos.
+Os inteiros: Real; Decimal; Float; Double
+Aos inteiros temos: TinyInt, SmaallInt; Int; MediumInt and BigInt
+Aos inteiros lógicos temos o Bit e o Boolean
+
+- TIPO PRIMITIVO = Data/Tempo = Date,Datetime,TimeStamp,Time,Year
+
+- TIPO PRIMITIVO = Literal:
+CaraVar/Varchar para Caracteres;
+TinyText; Text; MediumText; Longtext para Textos;
+TinyBlob; Blob (IMAGEM); MediumBlob e LongBlob para Binário;
+eNUM,(SET) ou conjuntos para Coleções;
+
+- TIPO PRIMITIVO = Espacial: ( Usado nas versões mais recentes do MYSQL)
+Geometry; Point; Polygon; Multpolygon para tipo primitivo espacial.
+
+// Precisão : É importante dimensionar bem a estrutura da tabela.//
+
+
 
