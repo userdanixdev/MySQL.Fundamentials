@@ -4,14 +4,17 @@
  
 ![httpswww mysql com](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/b5848927-614c-4ce7-89cc-e954fa9cd242)
 ![cursoemvideologo](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/9fa53666-4278-4eb3-ae62-73171d297cba)
+![logobosontreinamentos](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/5dfa2d0e-915f-4071-a042-6823f77a1465)
 
  ***
 
 1. Nesse repositório contem os primeiros comandos de banco de dados MySql.
-1. Curso ministrado pelo tutor Gustavo Guanabara do Curso em vídeo.
-1. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
-1. Suas aulas são bem didáticas e descontraídas. 
-1. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara._
+1. Tutorial baseado nas pratico teórico didáticos do tutor Gustavo Guanabara do Curso em vídeo.
+2. Tutorial baseado nas práticas teórica didática pelo tutor Fábio dos Reis - Fundador da Bóson Treinamentos.
+3. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
+4. Segue seu canal no Youtube: [Bóson Treinamentos](https://www.youtube.com/watch?v=cPlvnf1BHxw&list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR&index=6)
+5. As aulas do tutor Gustavo são bem didáticas e descontraídas. 
+6. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara_ e _Fábio dos Reis_.
 
 _**Inclusive, seus cursos estão sendo muito úteis para a minha carreira.**_
 ***
@@ -37,12 +40,15 @@ Cada tabela é composta por linhas, chamadas de TUPLAS e colunas ATRIBUTOS,
 com as colunas representando os campos de dados e as linhas representando registros individuais.
 ```
 
-A principal linguagem utilizada para interagir é a `Structured Query Language`ou `Linguagem de consulta estruturada.`
+A principal linguagem padrão utilizada para interagir é a `Structured Query Language`ou `Linguagem de consulta estruturada.`
+
+Usada em inúmeros sistemas, como MySQL, SQL Server, Oracle, Sybase, Access, DB2, PostgreSQL, etc.
+Cada sistema pode usar um “dialeto específico” do SQL, como T-SQL (SQL Server), PL/SQL (Oracle), JET SQL (Access), etc.
 
 **_Mas é possível integrar outras linguagens de programação._**
 
 Dentro de vários bancos de dados o MySql é popular, gratuito, licenciado, livre (_opensource_) e pertence a ORACLE atualmente.
-Muitas empresas multinacionais utilizam o MySQL para gerenciar sua base de dados.
+Muitas empresas utilizam o MySQL para gerenciar sua base de dados.
 
 ```
 Existe uma versão parecida com o MySql, conhecida como MariaDB.
@@ -53,10 +59,51 @@ Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
 ***
 
 1. DDL (_Data definition language_) - Linguagem de Definição de Dados ( Estrutura ).
-1. DML (_Data Manipulation Language_) - Linguagem de Manipulação de dados.
-1. DQL (_Data Query Language_) - Linguagem de Consulta de dados como: Solicitações, Leitura, consulta. 
-1. DCL (_Data Control Language_) - Linguagem de Controle para concessão, permissão e controle de acessos.
-1. DTL (_Data Transaction Language_) - Linguagem de Transação de Dados - Realiza diferentes transaçõe ocorridas dentro do BD.
+
+Comando |	Descrição
+|:---|:---
+CREATE	| Cria um novo banco de dados, tabela, visão, índice ou outro objeto no BD.
+ALTER |	Modifica um objeto existente no BD, como uma tabela.
+DROP |	Exclui uma tabela inteira, uma exibição de uma tabela ou outro objeto, incluindo o próprio banco de dados.
+***
+```
+Comandos que possuem a função de definir a estrutura do banco de dados (esquema). 
+Permitem efetuar a criação, alteração e exclusão de objetos, como tabelas, views, 
+triggers, procedimentos armazenados e outros.
+```
+***
+3. DML (_Data Manipulation Language_) - Linguagem de Manipulação de dados.
+```
+Comandos utilizados para gerenciar os dados armazenados no banco, 
+permitindo inserir novos dados, alterar dados existentes ou excluir dados armazenados. 
+```
+Comando |	Descrição
+|:---|:---
+INSERT	| Cria um novo registro (linha)
+UPDATE	| Modifica registros existentes
+DELETE	| Exclui um ou mais registros
+***
+5. DQL (_Data Query Language_) - Linguagem de Consulta de dados como: Solicitações, Leitura, consulta. 
+
+Comando | Descrição
+|:--- |:---
+SELECT |	Obtém registros especificados de uma ou mais tabelas, ou seja, efetuar consultas em tabelas.
+
+`Comandos utilizados para realizar consultas em um banco, por exemplo para obter dados armazenados.`
+***
+7. DCL (_Data Control Language_) - Linguagem de Controle para concessão, permissão e controle de acessos.
+
+`Comandos utilizados para controlar o acesso aos dados armazenados no banco, por meio de permissões de acesso.`
+
+Comando |	Descrição
+|:---|:---
+GRANT	| Fornece privilégios de acesso a um usuário
+REVOKE	| Retira os privilégios fornecidos a um usuário
+ALTER USER	| Permite modificar contas, como a senha de um usuário
+
+***
+
+9. DTL (_Data Transaction Language_) - Linguagem de Transação de Dados - Realiza diferentes transaçõe ocorridas dentro do BD.
 
 ```
 As transações seguem os princípios de:
@@ -65,6 +112,14 @@ As transações seguem os princípios de:
    Consistência - _dados íntegros_ 
    Atomicidade - _tudo ou nada_ 
   ```
+  
+`Comandos empregados para gerenciar transações no banco de dados. São usados para gerenciar as alterações realizadas por comandos DML executados.`
+
+Comando |	Descrição
+|:---|:---
+COMMIT	| Salvar transações de forma permanente no banco de dados
+ROLLBACK	| Restaurar o banco ao último estado após um commit que teve êxito
+SAVEPOINT	| Salvar temporariamente uma transação para que seja possível efetuar rollback àquele ponto se necessário.
   ***
   # WORK BENCH 
   ***
