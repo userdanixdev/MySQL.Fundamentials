@@ -1,0 +1,16 @@
+Comandos INSERT INTO (nome da tabela)
+** inserir as tuplas no banco de dados, não necessário ** Se incluir, evidenciar entre parênteses e vírgulas, os campos.) **
+** caso alguma tupla for AUTO_INCREMENT, colocar DEFAULT, por padrão irá colocar o que foi mencionado na ESTRUTURA INICIAL DA TABELA. **
+VALUES ( inserir os valores entre parênteses e separados por vírgula)
+
+Exemplo:
+
+insert into carros_velhos (id_carros,modelo_carros,marca_carro,ano_carro)
+values (1,'Brasília','volkswagen','1980');
+
+OU SOMENTE ( se souber as colunas na ordem correta)
+
+insert into carros_velhos 
+values (1,'Brasília','volkswagen','1980');
+
+(para verificar se deu certo digite: SELECT * FROM carros_velhos)
