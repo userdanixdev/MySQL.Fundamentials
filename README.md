@@ -4,7 +4,7 @@
  
 ![httpswww mysql com](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/b5848927-614c-4ce7-89cc-e954fa9cd242)
 ![cursoemvideologo](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/9fa53666-4278-4eb3-ae62-73171d297cba)
-![logobosontreinamentos](https://github.com/userdanixdev/MySQL.Fundamentials/assets/132594952/5dfa2d0e-915f-4071-a042-6823f77a1465)
+
 
  ***
 
@@ -12,7 +12,6 @@
 1. Tutorial baseado nas pratico teórico didáticos do tutor Gustavo Guanabara do Curso em vídeo.
 2. Tutorial baseado nas práticas teórica didática pelo tutor Fábio dos Reis - Fundador da Bóson Treinamentos.
 3. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
-4. Segue seu canal no Youtube: [Bóson Treinamentos](https://www.youtube.com/watch?v=cPlvnf1BHxw&list=PLucm8g_ezqNrWAQH2B_0AnrFY5dJcgOLR&index=6)
 5. As aulas do tutor Gustavo são bem didáticas e descontraídas. 
 6. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara_ e _Fábio dos Reis_.
 
