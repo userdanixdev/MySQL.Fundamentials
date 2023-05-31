@@ -130,7 +130,7 @@ SAVEPOINT	| Salvar temporariamente uma transação para que seja possível efetu
   Encontrados nos sites:
   * _https://www.microsoft.com/pt-br/download/developer-tools.aspx_ `Pacotes`
   * _https://dev.mysql.com/downloads/workbench/_ `Workbench`
-  * _https://sourceforge.net/projects/wampserver/_  `WAMP Server´`
+  * _https://sourceforge.net/projects/wampserver/_  `WAMP Server`
   
    #### Esses sites estão sujeitos a alterações e atualizações sem aviso nenhum.
    ***
