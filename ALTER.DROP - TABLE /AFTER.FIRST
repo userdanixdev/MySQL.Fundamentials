@@ -1,0 +1,13 @@
+Para adicionar uma coluna DEPOIS de QUALQUER OUTRA é:
+
+ALTER TABLE carros_velhos
+ADD COLUMN cor_carro VARCHAR(20) AFTER nome_coluna; (colocar antes o tipo primitivo antes do parêmetro AFTER)
+
+Para adicionar uma coluna ANTES do PRIMEIRO é:
+
+ALTER TABLE carros_velhos
+ADD COLUMN cor_carro VARCHAR(20) FIRST
+(ou seja, colocar sempre o TIPO PRIMITIVO ANTES)
+
+
+** Por padrão, todas as colunas adicionadas vão para a última coluna **
