@@ -1,5 +1,5 @@
 O Comando DESCRIBE nome_tabela  ou somente DESC nome_tabela (nos mostra a estrutura da tabela).
 
-ALTER TABLE nome_tabela seguido de ADD COLUMN nome_coluna DATE
-(date é um TIPO PRIMITIVO que temos que colocar, ou qualquer outro, irá depender da natureza do seu banco de dados)
+ALTER TABLE nome_tabela seguido de ADD COLUMN nome_coluna YEAR
+(YEAR é um TIPO PRIMITIVO que temos que colocar, ou qualquer outro, irá depender da natureza do seu banco de dados)
 (irá adicionar uma coluna nova)
