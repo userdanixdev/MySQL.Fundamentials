@@ -13,7 +13,7 @@
 2. Tutorial baseado nas práticas teórica didática pelo tutor Fábio dos Reis - Fundador da Bóson Treinamentos.
 3. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
 5. As aulas do tutor Gustavo são bem didáticas e descontraídas. 
-6. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara_ e _Fábio dos Reis_.
+6. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara_.
 
 _**Inclusive, seus cursos estão sendo muito úteis para a minha carreira.**_
 ***
