@@ -1,0 +1,8 @@
+MODIFY COLUMN modifica o tipo primitivo e constraints.
+PARA MODIFICAR O TIPO PRIMITIVO e CONSTRAINTS DE UMA COLUNA O COMANDO É:
+
+________________________________
+ALTER TABLE carros_velhos
+MODIFY COLUMN id_carros INT NOT NULL
+             (TIPO PRIMITIVO) e (CONSTRAINTS) por exemplo.
+             
