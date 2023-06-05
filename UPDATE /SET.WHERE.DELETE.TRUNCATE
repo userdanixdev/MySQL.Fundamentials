@@ -28,3 +28,28 @@ WHERE modelo_carro = 'Corsa'
 
 (PODENDO LIMITAR O NÚMERO DE LINHAS COM O COMANDO limit = número de linhas
 _____________________________________________________________________________________________________________________________
+
+Comando DELETE apaga linhas (dados) não apagará ESTRUTURA
+Se for usar o comando para apagar somente uma coluna, irá apagar TODOS OS CAMPOS.
+Sendo assim tomar BASTANTE CUIDADO.
+Sendo assim:
+
+DELETE FROM carros_antigos
+WHERE ident_carros = 2  --------- Irá apagar a linha 2 inteira ou qualquer campo inserido depois do WHERE -----------
+
+++ iMPORTANTE COLOCAR O LIMIT ++ Ocorrerá o risco de perder todos os dados ++
+_______________________________________________________________________________________________________
+Para remover todas as linhas e todos os registros da tabela chama-se TRUNCATE.
+
+TRUNCATE TABLE carros_antigos ou somente TRUNCATE e o nome da TABELA.
+
+++ somente esse comando mesmo ++
+
+****  IRÁ apagar todos os dados da tabela, sem BACKUP, perderá tudo ****
+__________________________________________________________________________________________________________________________
+
+
+
+
+
+
