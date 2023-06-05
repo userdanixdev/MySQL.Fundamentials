@@ -8,5 +8,6 @@ update carros_antigos
 set apelido_carro = 'Corsinha', ano_producao = 1996
 where ident_carro = 2
 
-(Para alterar mais de um CAMPO, acrescente uma vírgula e o CAMPO desejado, porém, SOMENTE A MESMA LINHA AINDA>
+(Para alterar mais de um CAMPO, acrescente uma vírgula antes da próxima COLUNA e o CAMPO desejado( ano_producao )
+SOMENTE UMA LINHA AINDA >
 
