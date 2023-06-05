@@ -3,3 +3,10 @@ Para alterar UMA LINHA SOMENTE ( da tabela ), menos a que estiver PRIMARY KEY e 
 UPDATE carros_antigos
 SET apelido_carro = 'Corsinha'
 WHERE ident_carro = 2
+________________________________________________________________________________________________________
+update carros_antigos
+set apelido_carro = 'Corsinha', ano_producao = 1996
+where ident_carro = 2
+
+(Para alterar mais de um CAMPO, acrescente uma vírgula e o CAMPO desejado, porém, SOMENTE A MESMA LINHA AINDA>
+
