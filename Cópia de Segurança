@@ -13,3 +13,8 @@ No MYSQL basta IMPORTAR os dados, caso foram DROPADOS, como forma de recuperaç�
 2. IMPORTAR DADOS
 
 _____________________________________________________________________________________________________________________________
+
+O arquivo DUMP MYSQL poderá ser levado para qualquer lugar ou salvo em qualquer lugar que irá abrir em outra máquina para continuar o
+trabalho, por exemplo.
+Basta renomea-lo para que não confunda.
+_________________________________________________________________________________________________________________________________
