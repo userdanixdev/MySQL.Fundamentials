@@ -13,3 +13,9 @@ SOMENTE UMA LINHA AINDA >
 _______________________________________________________________________________________________________________________________
 
 No MYSQL WORKBENCH, por padrão , só limita UMA LINHA DE ALTERAÇÃO.
+** Existe uma proteção do aplicativo para LIMITAR o uso do UPDATE **
+** Para modificação:
+Clique em EDIT -  PREFERENCES - MYSQL Editor - Other - 
+Desmarcar SAFE UPDATES (Atualizações seguras) - Marque OK
+Na TELA principal - ABA RECONNECT TO DBMS - 
+
