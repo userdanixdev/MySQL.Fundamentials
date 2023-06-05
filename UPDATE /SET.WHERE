@@ -1,1 +1,5 @@
+Para alterar UMA LINHA SOMENTE, menos a que estiver PRIMARY KEY e dependendo do tipo primitivo:
 
+UPDATE carros_antigos
+SET apelido_carro = 'Corsinha'
+WHERE ident_carro = 2
