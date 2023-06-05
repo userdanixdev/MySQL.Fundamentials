@@ -10,4 +10,6 @@ where ident_carro = 2
 
 (Para alterar mais de um CAMPO, acrescente uma vírgula antes da próxima COLUNA e o CAMPO desejado( ano_producao )
 SOMENTE UMA LINHA AINDA >
+_______________________________________________________________________________________________________________________________
 
+No MYSQL WORKBENCH, por padrão , só limita UMA LINHA DE ALTERAÇÃO.
