@@ -18,4 +18,13 @@ No MYSQL WORKBENCH, por padrão , só limita UMA LINHA DE ALTERAÇÃO.
 Clique em EDIT -  PREFERENCES - MYSQL Editor - Other - 
 Desmarcar SAFE UPDATES (Atualizações seguras) - Marque OK
 Na TELA principal - ABA RECONNECT TO DBMS - 
+_________________________________________________________________________________________________________________________
+Logo fica liberado para o comando UPDATE ser ILIMITADO, (inclusive o DELETE)
+Sendo assim o comando básico geral é:
 
+UPDATE carros_antigos
+SET apelido_carro = 'Corsinha'
+WHERE modelo_carro = 'Corsa'
+
+(PODENDO LIMITAR O NÚMERO DE LINHAS COM O COMANDO limit = número de linhas
+_____________________________________________________________________________________________________________________________
