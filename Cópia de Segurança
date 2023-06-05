@@ -1,0 +1,15 @@
+No MYSQL WORKBENCH tem a opção de EXPORTAR DADOS,ou seja, exporta dados da base de dados (qualquer base) como cópia de segurança.
+_________________________________________________________________________________________
+1. No MYSQL WORKBENCH 8.0 basta acessar na aba, na tela principal, a opção SERVER.
+2. SERVER - OPÇÃO ** exportar dados **
+3. Selecionar a TABELA que deseja EXPORTAR DADOS.
+_________________________________________________________________________________________
+Com isso irá gerar um DUMP,ou seja, um tipo de cópia de segurança salvo no seu computador.
+++ Esse DUMP, ou descarte, contém as informações sobre o os dados que foi criado. Exemplo: Estrutura da tabela, dados primitiboss
+constrangens, nome dos dados.
+_________________________________________________________________________________________________________________________
+No MYSQL basta IMPORTAR os dados, caso foram DROPADOS, como forma de recuperação dos dados exluído como forma de segurança.
+1. Server 
+2. IMPORTAR DADOS
+
+_____________________________________________________________________________________________________________________________
