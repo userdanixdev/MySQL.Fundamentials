@@ -1,3 +1,17 @@
 O comando em MYSQL:
 SELECT * (asterisco -SIGNIFICA EM MYSQL TODAS AS COLUNAS) FROM nome_tabela --- irá selecionar todos os registros e todas as colunas.
-____________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
+
+Para FILTRAR QUALQUER LINHA DESEJADA da tabela basta escolher a coluna desejada 
+e colocar o comando WHERE : 
+
+SELECT * FROM cursos
+WHERE ano = 2016;
+---ou com aspas simples '2016' ---
+
+obs: o ORDER BY irá auxiliar, se preferir colocar esse comando, para organizar outras colunas, sempre na forma padrão ASC.
+__________________________________________________________________________________________________________________________
+
+
+
+
