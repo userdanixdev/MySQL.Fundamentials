@@ -1,0 +1,3 @@
+O comando em MYSQL:
+SELECT * (asterisco -SIGNIFICA EM MYSQL TODAS AS COLUNAS) FROM nome_tabela --- irá selecionar todos os registros e todas as colunas.
+____________________________________________________________________________________________________
