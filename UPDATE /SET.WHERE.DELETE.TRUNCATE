@@ -29,7 +29,7 @@ WHERE modelo_carro = 'Corsa'
 (PODENDO LIMITAR O NÚMERO DE LINHAS COM O COMANDO limit = número de linhas
 _____________________________________________________________________________________________________________________________
 
-Comando DELETE apaga linhas (dados) não apagará ESTRUTURA
+Comando DELETE apaga linhas (dados), não apagará ESTRUTURA
 Se for usar o comando para apagar somente uma coluna, irá apagar TODOS OS CAMPOS.
 Sendo assim tomar BASTANTE CUIDADO.
 Sendo assim:
