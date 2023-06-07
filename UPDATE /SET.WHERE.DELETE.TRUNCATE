@@ -46,7 +46,8 @@ TRUNCATE TABLE carros_antigos ou somente TRUNCATE e o nome da TABELA.
 
 ++ somente esse comando mesmo ++
 
-****  IRÁ apagar todos os dados da tabela, sem BACKUP (DUMP), perderá tudo ****
+****  IRÁ apagar todos os dados da tabela, sem BACKUP (DUMP) ** Tem um arquivo de que gerar um dump ou fazer
+cópia de segurança nesse repositório, perderá tudo ****
 __________________________________________________________________________________________________________________________
 
 
