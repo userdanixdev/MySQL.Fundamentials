@@ -3,6 +3,8 @@ Pelo comando ORDER BY nome_coluna +++  Irá selecionar em ordem alfabética de A
 
 SELECT * FROM cursos (obs: sem ponto e vírgula)
 ORDER BY nome; (com ponto e vírgula no MYSQL WORKBENCH)  
- ---m iá selecionar em ordem alfabética de A a Z e DE CIMA para BAIXO os registros da COLUNA nome, do arquivo DUMP como GUIA.
+-- Sendo assim irá selecionar em ordem alfabética de A a Z e DE CIMA para BAIXO os registros da COLUNA nome, (do arquivo DUMP como GUIA).
 
 ** Caso não seja feito isso, irá dar erro. +++ Atenção ao ponto e vírgula por último no COMANDO INTEIRO. **
+
+
