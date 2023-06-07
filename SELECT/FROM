@@ -1,0 +1,24 @@
+Esse comando ,sem o asterisco, irá FILTRAR as colunas que deseja e na ORDEM que desejar.
+Sendo assim:
+
+SELECT nome, carga, ano FROM cursos;
+OU COMO PREFERIR:
+SELECT carga, ano, nome FROM cursos;
+______________________________________________________________________________________________________________
+
+Porém, a tabela toda fica BAGUNÇADA. Sendo assim precisa de ORDEM sendo assim:
+
+SELECT nome, carga, ano FROM cursos
+ORDER BY ano;
+
+*** Portanto, completando o comando por ORDER BY, irá ORGANIZAR as SELEÇÕES FEITAS do primeiro comando acima ***
+_________________________________________________________________________________________________________________
+
+A ordem de preferência é da ESQUERDA para a DIREITA.
+Temos então o poder de ordená-las pelas preferências.
+Sendo assim:
+
+SELECT nome, carga, ano FROM cursos
+ORDER BY ano, nome;   ---- Ordene por ANO primeiro e depois por NOME ou o a ORDEM que desejar ---
+
+___________________________________________________________________________________________________________________
