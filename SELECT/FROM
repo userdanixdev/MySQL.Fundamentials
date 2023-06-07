@@ -22,3 +22,13 @@ SELECT nome, carga, ano FROM cursos
 ORDER BY ano, nome;   ---- Ordene por ANO primeiro e depois por NOME ou o a ORDEM que desejar ---
 
 ___________________________________________________________________________________________________________________
+
+Para FILTRAR QUALQUER LINHA DESEJADA da tabela basta escolher a coluna desejada (OU COLUNAS DESEJADAS)
+e colocar o comando WHERE : 
+(POSSO SEPARAR as COLUNAS RETIRANDO O ASTERISCO)
+SELECT nome, carga FROM cursos
+WHERE ano = 2016;
+---ou com aspas simples '2016' ---
+
+obs: o ORDER BY irá auxiliar, se preferir colocar esse comando, para organizar outras colunas, sempre na forma padrão ASC.
+__________________________________________________________________________________________________________________________
