@@ -13,7 +13,8 @@ DELETE
 TRUNCATE
 SELECT - Alguns consideram como manipulação - Porém ele SELECIONA -  Portanto se encaixa em DQL - ++
 
-** SELECT é classificado, por alguns autores, em diferentes classificações. ***
+** SELECT é classificado, por alguns autores, por diferentes classificações. ***
 
-DQL ( Data Query Language)
+DQL ( Data Query Language ) = 
+
 SELECT
