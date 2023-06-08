@@ -42,6 +42,9 @@ ORDER BY nome AND ano;
 
 ______________________________________________________________________________________________________________________
 
+OBS: No caso do operador lógico OR só será inválido se todos os atributos forem FALSOS.
+______________________________________________________________________________________________________________________________
+
 *** TODOS OS COMANDOS SÂO BASEADOS NO DUMP DENTRO DA PASTA SELECT *** Servirá como GUIA para o aprendizado ****
 
 
