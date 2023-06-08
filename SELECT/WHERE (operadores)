@@ -13,3 +13,15 @@ WHERE ano = 2015 -- ( daí irá aparecer tabela somente os anos de 2015, sem ord
 WHERE ano < , > , = ou !=
 ______________________________________________________________________________________________________________________________________
 ** O ORDER BY, se quiser utilizar, para organizar ainda mais a tabela, é viável e coerente.
+_______________________________________________________________________________________________________________________________________
+
+Parâmetros (operador que especifica valores) BETWEEN ( entre ) e AND ( e ), por exemplo:
+
+SELECT * FROM cursos
+WHERE ano BETWEEN 2018 AND 2015
+_____________________________________________________________________________________________________________________________________
+Operador IN especifica valores unitários e a descriçao portanto é diferente, por exemplo:
+
+SELECT * FROM cursos
+WHERE ano IN (2015,2018)  O parâmetro IN irá mostrar portanto somente os valores dos anos 2015 e 2018, obrigatoriamente com os parênteses.
+_____________________________________________________________________________________________________________________________________
