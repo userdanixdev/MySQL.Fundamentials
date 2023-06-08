@@ -25,3 +25,23 @@ Operador IN especifica valores unitários e a descriçao portanto é diferente, 
 SELECT * FROM cursos
 WHERE ano IN (2015,2018)  O parâmetro IN irá mostrar portanto somente os valores dos anos 2015 e 2018, obrigatoriamente com os parênteses.
 _____________________________________________________________________________________________________________________________________
+
+Operador AND é útil para separar dois valores no comando WHERE, usando os sinais operadores lógicos maior (>) ou menor (<),por exemplo:
+
+SELECT nome, carga, totaulas FROM cursos
+WHERE carga > 35 AND totaulas < 30 
+ORDER BY nome;
+_______________________________________________________________________________________________________________________________________
+
+AND ou OR ( ou ) são operadores lógicos que se encaixam em todos os parâmetros.
+Pode-se usar também tanto para o WHERE quanto para o ORDER BY para a tabela ficar mais PRECISA no que deseja, por exemplo:
+
+SELECT nome, carga, totaulas FROM cursos
+WHERE carga > 35 AND totaulas < 30 
+ORDER BY nome AND ano;
+
+______________________________________________________________________________________________________________________
+
+
+
+
