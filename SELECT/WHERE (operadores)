@@ -1,0 +1,15 @@
+_______________________________________________________________________________________________________________________________________
+---Apesar do WHERE,parâmetro, estar presente em outros arquivos como FROM ou ORDER BY, neste repositório, o comando possui OPERADORES 
+de sinais matemáticos --
+ +++ Esses sinais são importantes para organizar a sua tabela: +++
+
+SINAIS : > (maior),  <(menor), =(igual) ou !=(diferente)** Tudo que não for
+** Existe outra forma de representar o diferente ' <> ' **
+
+Exemplo prático:
+
+SELECT nome, descricao, ano FROM cursos
+WHERE ano = 2015 -- ( daí irá aparecer tabela somente os anos de 2015, sem ordem)
+WHERE ano < , < , = ou !=
+______________________________________________________________________________________________________________________________________
+** O ORDER BY, se quiser utilizar, para organizar ainda mais a tabela, é viável e coerente.
