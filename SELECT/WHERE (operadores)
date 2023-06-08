@@ -10,6 +10,6 @@ Exemplo prático:
 
 SELECT nome, descricao, ano FROM cursos
 WHERE ano = 2015 -- ( daí irá aparecer tabela somente os anos de 2015, sem ordem)
-WHERE ano < , < , = ou !=
+WHERE ano < , > , = ou !=
 ______________________________________________________________________________________________________________________________________
 ** O ORDER BY, se quiser utilizar, para organizar ainda mais a tabela, é viável e coerente.
