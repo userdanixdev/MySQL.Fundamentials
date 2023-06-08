@@ -46,6 +46,23 @@ OBS: No caso do operador lógico OR só será inválido se todos os atributos fo
 ______________________________________________________________________________________________________________________________
 
 *** TODOS OS COMANDOS SÂO BASEADOS NO DUMP DENTRO DA PASTA SELECT *** Servirá como GUIA para o aprendizado ****
+__________________________________________________________________________________
+TABELA OPERADOR LÓGICO:
+
+AND 
+V + V = V
+V + F = F
+F + V = F
+F + F = F
+
+OR
+V + V = V
+V + F = V
+F + V = V
+F + F = F
+____________________________________________________________________________
+
+
 
 
 
