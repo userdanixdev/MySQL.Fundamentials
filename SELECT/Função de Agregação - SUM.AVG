@@ -1,0 +1,31 @@
+Função de agregação de SOMAR - SUM - sum - 
+Na tabela de CURSOS do DUMP do arquivo salvo no repositório.
+O comando é:
+
+SELECT sum(totaulas) cursos;
+O resultado no MY SQL WORKBENCH é: 583 sum(totaulas)
+____________________________________________________________________________________________________
+Para ser mais específico podemos colocar o comando/parâmetro WHERE ano = 2016, por exemplo.
+
+SELECT sum(totaulas) cursos WHERE ano = 2014 - aspas opcional no MYSQL WORKBENCH 8.0 --
+Result Set : 60 sum(totaulas)
+
+Obs: A função 'min' e 'max' funcionará melhor a depender da natureza da tabela ou da coluna específica.
++++ No caso do 'totaulas' são números inteiros simples para soma ou mínimo. +++
+__________________________________________________________________________________________________________________________________________
+
+SELECT avg(totaulas) FROM cursos -Média-(avarage) --- Irá mostrar a média de total de aulas dentro do curso.
+Result set: 19.43 avg(totaulas) ou seja, a média total.
+Da mesma forma, podemos ser mais específicos dizendo:
+
+SELECT avg(totaulas) FROM cursos WHERE ano = 2018
+Result set: 15.000
+*** Fez a média total dos cursos SOMENTE do ano de 2018. ***
+________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
