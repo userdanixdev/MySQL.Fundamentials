@@ -23,5 +23,25 @@ Caso queira pesquisar algum nome SEMELHANTE ANTES de qualquer letra usa-se a car
 da LETRA SEMELHANTE. Assim:
 
 SELECT * FROM cursos
-WHERE nome LIKE '%P'   ----  '%' Vários caracteres -  
+WHERE nome LIKE '%A'   ----  '%' Vários caracteres -  
+
+No caso, a pesquisa feita nesse comando geral a letra 'A' estará no final de cada pesquisa semelhante.
+Ou seja, todo CARACTERE que se PAREÇA ou TENHA a letra 'A' irá aparecer na tela.
+____________________________________________________________________________________________________________
+
+Caracter semelhante em QUALQUER LUGAR com o PARÂMETRO '%' :
+Obs: Tem toda versão do MYSQL considera algumas letra com acentuação, 'UTF8' terá de ser atribuida em algumas versões.
+Assim:
+
+SELECT * FROM cursos
+WHERE nome LIKE '%A%' ---- UM PAR de WILD CARDs deverá estar posicionado entre a letra semelhante -
+______________________________________________________________________________________________________________________________________________
+
+Uso do NOT LIKE :
+
+SELECT * FROM cursos
+WHERE nome NOT LIKE '%A'  - O operador NOT LIKE irá NEGAR a pesquisa da letra e caracteres semelhantes com a letra 'A'.
+____________________________________________________________________________________________________________________________________________________________
+
+
 
