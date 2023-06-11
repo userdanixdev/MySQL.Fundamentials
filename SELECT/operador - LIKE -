@@ -42,7 +42,7 @@ Uso do NOT LIKE :
 SELECT * FROM cursos
 WHERE nome NOT LIKE '%A'  - O operador NOT LIKE irá NEGAR a pesquisa da letra e caracteres semelhantes com a letra 'A' ++
 ++ Ou qualquer LETRA ++
-____________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
 
 Uso do LIKE com a WILD CARD 'SUBLINHADO' - Usa-se para obrigatoriamente ter UMA LETRA QUALQUER ou CARACTER, como desejar ---
 Recomenda-se usar junto com outra WILD CARD já conhecida, a '%', para completar a pesquisa desejada. PORÉM NÃO PODE TER NENHUMA LETRA.
@@ -54,5 +54,16 @@ Recomenda-se usar junto com outra WILD CARD já conhecida, a '%', para completar
 Obs: EXCELENTE FAZER BUSCA POR PEDAÇOS
 __________________________________________________________________________________________________________________________________________________
 
+Exemplos práticos:
+
+SELECT * FROM cursos
+WHERE nome LIKE  '%silva%'  -  irá realizar a pesquisa em 'silva' em qualquer lugar da tabela - 
+                 '%silva'   -  Todos os nomes que terminam com silva
+                 'silva%'   - Todos os nome que começam com silva
+                 '%_silva%' - Irá selecionar silva com um ESPAÇO antes - Uso de duas cartas coringas - 
+__________________________________________________________________________________________________________________________________________                 
+                 
+                 
+                 
 
 
