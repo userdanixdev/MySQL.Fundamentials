@@ -11,11 +11,17 @@ Sendo assim:
 
 SELECT * FROM cursos
 WHERE nome LIKE 'P%'; ---- Sendo assim o operador irá pesquisar semelhanças com a letra P ----
+
 *** A porcentagem é uma CARTA CORINGA, conhecida como 'WILD CARD' ***
 
-Para que serve?  - Uma carta coringa como parâmetro para a pesquisa no contexto. Servirá como um TESTE e SUBSTITUIÇÃO --
+Para que serve?  - Uma carta coringa é usada como parâmetro para a pesquisa no contexto. - Servirá como um TESTE e SUBSTITUIÇÃO --
 +++ SE HOUVER ALGO SEMELHANTE COM A LETRA P + A WILD CARD, O TESTE MOSTRARÁ NEGATIVO OU POSITIVO +++
 *** Caso seja positivo irá aparecer, na tela, semelhanças. Caso negativo, não apareça NADA ***
+_______________________________________________________________________________________________________________________________
 
+Caso queira pesquisar algum nome SEMELHANTE ANTES de qualquer letra usa-se a carta coringa a PORCENTAGEM '%' em primeiro lugar antes
+da LETRA SEMELHANTE. Assim:
 
+SELECT * FROM cursos
+WHERE nome LIKE '%P'   ----  '%' Vários caracteres -  
 
