@@ -1,4 +1,36 @@
-O comando DISTINCT serve paraDISTINGUIR um dos outros sem REPETI-LOS.
-
-
+O comando DISTINCT serve para DISTINGUIR um dos outros sem REPETI-LOS.
+Exemplo:
 SELECT DISTINC nacionalidade GAFANHOTOS - Serve para DISTINGUIR um dos outros sem REPETI-LOS.
+
+Se usar-mos o SELECT nacionalidade FROM gafanhotos irá aparecer somente as nacionalidades dos alunos ' gafanhotos'
+E muitos são repetidos , por exemplo:
+
+nacionalidade
+Brasil
+Portugal
+Moçambique
+Irlanda 
+Brasil 
+Brasil 
+Brasil
+EUA 
+Brasil
+....
+
+Note que a nacionalidade 'Brasil' apareceu várias vezes e se repetindo.
+++++ O comando SELECT DISTINCT serve para distingui-los sem REPETI-LOS. +++
+
+Exemplo: SELECT DISTINCT nacionalidade FROM gafanhotos:
+
+nacionalidade
+Brasil
+Portugal
+Moçambique
+Irlanda
+EUA
+...
+
+***  Portanto assim irá aparecer todas as nacionalidades selecionadas ,inclusive o 'Brasil' sem repeti-los. Irá aparecer somente 1 (um) de cada.
+
+
+
