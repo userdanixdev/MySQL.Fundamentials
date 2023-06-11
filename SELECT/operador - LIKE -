@@ -1,0 +1,14 @@
+O SELECT possui os maiores comandos do MYSQL. 
+
+Obs: O SELECT existem pequenas mudanças entre seus parâmetros.
+__________________________________________________________________________________
+
+PARÂMETRO (operador) LIKE :
+
+LIKE é um parâmetro/operador de SEMELHANÇA , assim como o operador = (igual) sugere uma pesquisa ou consulta IGUAL ao desejado, 
+o LIKE procura no banco de dados uma SEMELHANÇA.
+Sendo assim:
+
+SELECT * FROM cursos
+WHERE nome LIKE 'P%';
+
