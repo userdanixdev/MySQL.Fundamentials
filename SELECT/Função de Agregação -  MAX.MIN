@@ -1,0 +1,26 @@
+** FUNÇÃO DE AGREGAÇÃO MAX ***
+++ Contagem Máxima ou maior número possível de qualquer coluna.Nesse caso aqui é:
+
+SELECT max(carga) FROM cursos --- Irá nos mostrar a carga máxima dos cursos.
+________________________________________________________________________________________________________________
+
+Para a consulta ser mais específica e não der erro, podemos usar o WHERE:
+
+SELECT max(totaulas) FROM cursos WHERE ano = 2016  
+Portanto assim irá nos mostrar o máximo de aulas, em números, SOMENTE do ano de 2016 ou o ano que desejar. ++ Tudo depende da natureza de sua tabela ++
+Obs: A tabela nos mostra o mínimo de 2014, abaixo não tem cursos. Irá aparecer NULL.
+Por exemplo:
+SELECT max(totaulas) FROM cursos WHERE ano = 2013
+Resultado = NULL -  Porque não tem cursos no ano de 2013, somente a partir de 2014.
+______________________________________________________________________________________________________________________________________________
+
+Função de agregação MÍNIMO ( MIN ) - o MENOR número na coluna específica -
+SELECT min(totaulas) FROM cursos WHERE ano = 2016
+Resultado: 15 (mínimo)
+Obs: Porém, na tabela CURSOS tem 2 ( dois ) cursos com mínimo de aulas 15. Sendo assim, podemos colocar:
+
+SELECT nome, min(totaulas) FROM cursos WHERE ano =2016 
+NOTE QUE DEPOIS DO SELECT COLOQUEI O 'NOME' QUE É A COLUNA ESPECÍFICA. +++ E mesmo assim irá faltar outro cursos +++
+Nesse caso, será necessária outra função de AGRUPAMENTO para selecionar os 2 (dois) nomes.
+_____________________________________________________________________________________________________________________________________
+
