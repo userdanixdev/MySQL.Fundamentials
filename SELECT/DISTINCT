@@ -30,7 +30,24 @@ Irlanda
 EUA
 ...
 
-***  Portanto assim irá aparecer todas as nacionalidades selecionadas ,inclusive o 'Brasil' sem repeti-los. Irá aparecer somente 1 (um) de cada.
+***  Portanto assim irá aparecer todas as nacionalidades selecionadas ,inclusive o 'Brasil' sem repeti-los. Irá aparecer somente 1 (um) de cada. ***
+______________________________________________________________________________________________________________________________________________________________
+
+Obs: Use o ORDER BY nacionalidade;  ---- Para ordenar e deixar a lista mais organizada ----
+Exemplo:
+
+SELECT DISTINCT nacionalidade FROM gafanhotos
+ORDER BY nacionalidade
+
+nacionalidade
+Alemanha
+Angola
+Brasil
+Canadá
+EUA
+França
+Irlanda
+....
 
 
-
+_________________________________________________________________________________________________________________________
