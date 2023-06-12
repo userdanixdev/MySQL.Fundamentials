@@ -1,3 +1,12 @@
-Esse arquivo tem como base o DUMP que se encontra no repositório para realização dos exercícios de fixação,
-ministrado pelo tutor Gustavo Guanabara, do curso em vídeo.
+Esse arquivo tem como base o DUMP que se encontra no repositório para realização dos exercícios de fixação.
+Ministrado pelo tutor Gustavo Guanabara, do curso em vídeo.
 ------------------------------------------------------------------------------------------------------------------------------------
+
+1) Uma lista com o nome de todos os gafanhotos Mulheres:
+
+USE cadastro
+SELECT nome FROM gafanhotos
+WHERE sexo = 'F'
+ORDER BY nome;
+______________________________________________________________________________________________________________________________________
+2) Uma lista com os dados de todos aqueles que nasceram entre 1/Jan/2000 e 31/Dez/2015.
