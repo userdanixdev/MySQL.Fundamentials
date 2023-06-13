@@ -29,6 +29,19 @@ SELECT * FROM gafanhotos
 WHERE profissao = 'programador' AND sexo = 'M'
 ORDER BY nome
 --------------------------------------------------------------------------------------------------------------------------------------
+4) Uma lista com os dados de todas as mulheres que nasceram no Brasil e que têm seu nome iniciando com a letra J.
+Sendo assim:
+
+SELECT * FROM gafanhotos
+WHERE sexo='F'AND nacionalidade='Brasil' AND nome LIKE 'J%'
+_____________________________________________________________________________________________________________________________________
+5) Uma lista com o nome e nacionalidade de todos os homens que têm Silva no nome, não nasceram no Brasil e pesam menos de 100 Kg.
+
+SELECT * FROM gafanhotos
+WHERE sexo = 'M' AND nome LIKE '%silva%' AND nacionalidade != 'Brasil' AND peso < '100'  OU
+WHERE sexo = 'M' and nome LIKE '%silva%' and nacionalidade >< 'Brasil' and peso < '100'
+-------------------------------------------------------------------------------------------------------------------------------------
+6) Qual é a maior altura entre gafanhotos Homens que moram no Brasil
 
 
 
