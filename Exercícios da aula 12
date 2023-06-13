@@ -15,6 +15,13 @@ SELECT * FROM gafanhotos
 WHERE nascimento BETWEEN '2000/01/01' AND '2015/12/31' - Obs: Colocar aspas SIMPLES nas datas. IMPORTANTE
 ou
 SELECT * FROM gafanhotos
-WHERE nascimento BETWEEN '2000-01-01' AND '2015-12-31'
+WHERE nascimento BETWEEN '2000-01-01' AND '2015-12-31' 
+Usando o ORDER BY para organizar em ordem ASC o nascimento CRESCENTE. Igual o exercícios abaixo:
+--------------------------------------------------------------------------------------------------------------------------------------
+Sendo assim, podemos também usar os sinais MAIOR OU IGUAL e MENOR OU IGUAL, também:
+
+SELECT * FROM gafanhotos
+WHERE nascimento >= '2000/01/01' and nascimento <= '2015/12/31'
+ORDER BY nascimento 
 --------------------------------------------------------------------------------------------------------------------------------------
 
