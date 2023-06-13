@@ -24,4 +24,12 @@ SELECT * FROM gafanhotos
 WHERE nascimento >= '2000/01/01' and nascimento <= '2015/12/31'
 ORDER BY nascimento 
 --------------------------------------------------------------------------------------------------------------------------------------
+3) Uma lista com o nome de todos os homens que trabalham como programadores.
+SELECT * FROM gafanhotos
+WHERE profissao = 'programador' AND sexo = 'M'
+ORDER BY nome
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
