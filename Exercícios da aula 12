@@ -41,7 +41,30 @@ SELECT * FROM gafanhotos
 WHERE sexo = 'M' AND nome LIKE '%silva%' AND nacionalidade != 'Brasil' AND peso < '100'  OU
 WHERE sexo = 'M' and nome LIKE '%silva%' and nacionalidade >< 'Brasil' and peso < '100'
 -------------------------------------------------------------------------------------------------------------------------------------
-6) Qual é a maior altura entre gafanhotos Homens que moram no Brasil
+6) Qual é a maior altura entre gafanhotos Homens que moram no Brasil:
+
+SELECT max(altura) FROM gafanhotos
+WHERE sexo = 'M' AND nacionalidade = 'brasil' 
+Result Set: 2.35m de altura
+--------------------------------------------------------------------------------------------------------------------------------------
+7) Qual é a média de peso dos gafanhotos cadastrados:
+
+SELECT avg(peso) FROM gafanhotos
+--------------------------------------------------------------------------------------------------------------------------------------
+8) Qual é o menor peso entre os gafanhotos Mulheres que nasceram fora do Brasil e entre 01/Jan/1990 e 31/Dez/2000:
+
+SELECT min(peso) FROM gafanhotos
+WHERE sexo = 'F' AND nacionalidade <> 'brasil' AND nascimento BETWEEN '1990-01-01' AND '2000-12-31'
+Result : min(peso) = 35.90 KG
+______________________________________________________________________________________________________________________________________
+9) Quantas gafanhotos Mulheres tem mais de 1.90cm de altura:
+
+SELECT count(altura) FROM gafanhotos
+WHERE sexo = 'F' AND altura >= '1.90'
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
