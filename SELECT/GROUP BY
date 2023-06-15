@@ -11,8 +11,9 @@ GROUP BY carga;
 OUTRO EXEMPLO:
 Usando o contador = 
 
-SELECT totaulas, count(totaulas) from cursos
+SELECT totaulas, count(totaulas) FROM cursos
 GROUP BY totaulas
 ORDER BY totaulas;
+** ótimo comando de parâmetro este de cima **
 ---------------------------------------------------------------------------------------------------------------------------
 
