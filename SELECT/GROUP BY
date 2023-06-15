@@ -8,6 +8,11 @@ SELECT carga FROM cursos
 GROUP BY carga;
 ++ Irá agrupar semelhantes por coluna desejada ++
 
-Usando o contador:
+OUTRO EXEMPLO:
+Usando o contador = 
 
-SELECT carga,count(nomes)
+SELECT totaulas, count(totaulas) from cursos
+GROUP BY totaulas
+ORDER BY totaulas;
+---------------------------------------------------------------------------------------------------------------------------
+
