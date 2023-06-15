@@ -30,5 +30,23 @@ Resultado:
 | F    |           2 |
 +------+-------------+
 _____________________________________________________________________________________________________________________________________________
+/* Exercicio 3 -Lista com gafanhotos que nasceram fora do BRASIL, mostrando o país de origem e o total de pessoas nascidas lá. 
+Só nos interessam os países que tiveram mais de 3 gafanhotos com essa nacionalidade. */
+Resposta:
+
+SELECT nacionalidade,count(nacionalidade) FROM gafanhotos WHERE nacionalidade != 'Brasil' GROUP BY nacionalidade HAVING count(nacionalidade) >= 3;
+Result:
++---------------+----------------------+
+| nacionalidade | count(nacionalidade) |
++---------------+----------------------+
+| Portugal      |                    8 |
+| Moçambique    |                    3 |
+| Irlanda       |                    3 |
+| EUA           |                    8 |
+| Canadá        |                    4 |
+| Angola        |                    4 |
++---------------+----------------------+
+____________________________________________________________________________________________________________________________________________________
+
 
 
