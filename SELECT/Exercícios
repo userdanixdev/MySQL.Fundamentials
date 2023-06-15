@@ -1,0 +1,34 @@
+-- Exercícios de fixação -- SELECT
+
+/* Exercicio 1 - Uma lista com as profissões dos gafanhatos e seus respectivos quantitativos. */
+Resposta:
+
+SELECT profissao,nacionalidade,count(profissao) FROM gafanhotos GROUP BY profissao;
+Resultado:sele
++----------------------+---------------+------------------+
+| profissao            | nacionalidade | count(profissao) |
++----------------------+---------------+------------------+
+| Auxiliar Administrat | Brasil        |               13 |
+| Farmacêutico         | Portugal      |                2 |
+| Programador          | Moçambique    |               16 |
+| Professor            | Brasil        |                7 |
+| Dentista             | EUA           |                7 |
+| Ator                 | Brasil        |                6 |
+| Empreendedor         | Portugal      |                7 |
+| Médico               | França        |                3 |
++----------------------+---------------+------------------+
+________________________________________________________________________________________________________________________________________
+/* ExercÍcio 2 - Quantos gafanhotos homens e mulheres nasceram após 01/jan/2005? */
+Resposta:
+
+SELECT sexo,count(sexo) FROM gafanhotos WHERE nascimento > '2005-01-01' GROUP BY sexo;
+Resultado:
++------+-------------+
+| sexo | count(sexo) |
++------+-------------+
+| M    |           8 |
+| F    |           2 |
++------+-------------+
+_____________________________________________________________________________________________________________________________________________
+
+
