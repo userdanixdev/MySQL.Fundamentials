@@ -120,3 +120,35 @@ O GROUP BY é mais completo que o SELECT DISTINCT.
 *** Usar sempre o count (contador) quando agrupar determinadas colunas para saber a quantidade de registros AGRUPADOS.***
 
 ---------------------------------------------------------------------------------------------------------------------------------------
+
+USO DO PARÂMENTRO 'HAVING' - é necessário ter obrigatoriamente o GROUP BY para utilizar o campo, porém, só funciona em uma coluna agrupada
+pelo GROUP BY.
+* 'HAVING' é um parâmetro simples utilizado para junto com o GROUP BY selecionado.
+Exemplo:
+
+mysql> SELECT * ,count(*) FROM cursos GROUP BY ano HAVING ano > 2015;
+
++---------+--------------------+--------------------------------------------------+-------+----------+------+----------+
+| idcurso | nome               | descricao                                        | carga | totaulas | ano  | count(*) |
++---------+--------------------+--------------------------------------------------+-------+----------+------+----------+
+|       6 | MySQL              | Bancos de Dados MySQL                            |    30 |       15 | 2016 |        4 |
+|       8 | Python             | Curso de Python                                  |    40 |       18 | 2017 |        8 |
+|      11 | Responsividade     | Curso de Responsividade                          |    30 |       15 | 2018 |        5 |
+|      17 | Swift              | Curso de Desenvolvimento de Aplicativos para iOS |    60 |       30 | 2019 |        4 |
+|      27 | Modelagem de Dados | Curso de Modelagem de Dados                      |    30 |       12 | 2020 |        2 |
++---------+--------------------+--------------------------------------------------+-------+----------+------+----------+
+
+PARA DEIXAR A TABELA MAIS ESPECÍFICA NO COMANDO , PODEMOS TIRAR ALGUMAS COLUNAS:
+Sendo assim:
+
+SELECT carga, totaulas,ano,count(idcurso) FROM cursos GROUP BY ano HAVING ano > 2015;
++-------+----------+------+----------------+
+| carga | totaulas | ano  | count(idcurso) |
++-------+----------+------+----------------+
+|    30 |       15 | 2016 |              4 |
+|    40 |       18 | 2017 |              8 |
+|    30 |       15 | 2018 |              5 |
+|    60 |       30 | 2019 |              4 |
+|    30 |       12 | 2020 |              2 |
++-------+----------+------+----------------+
+______________________________________________________________________________________________________________________________________________________________________
