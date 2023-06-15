@@ -111,7 +111,7 @@ SELECT carga,totaulas,ano,count(*) FROM cursos GROUP by totaulas,carga;
 |    30 |       11 | 2010 |        1 |
 +-------+----------+------+----------+
 
-        REPARE QUE O NÚMERO AUMENTOU CONFORME EU COLOQUEI PARA AGRUPAR EM CARGA
+        REPARE QUE O NÚMERO AUMENTOU CONFORME EU COLOQUEI PARA AGRUPAR EM CARGA, juntamente com AGRUPAR EM TOTAULAS TAMBÉM 
 _______________________________________________________________________________________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________
 
