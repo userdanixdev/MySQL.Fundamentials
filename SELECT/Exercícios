@@ -48,5 +48,54 @@ Result:
 +---------------+----------------------+
 ____________________________________________________________________________________________________________________________________________________
 
+* Exercicio 4 - Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas que pesam mais de 100kg e que estao acima da media 
+da altura de todos os gafanhotos. */
+Resposta: ---- SIMPLES --
+
+SELECT count(*) FROM gafanhotos WHERE peso > 100 AND altura > 1.66;
+Result:
++----------+
+| count(*) |
++----------+
+|        8 |
++----------+
+
+OU 
+
+RESPOSTA MAIS COMPLEXA COM OUTRA SINTAXE:
+
+SELECT altura, count(*) from gafanhotos
+    -> where peso >'100' group by altura having altura > (select avg(altura) from gafanhotos);
++--------+----------+
+| altura | count(*) |
++--------+----------+
+|   2.22 |        1 |
+|   1.97 |        1 |
+|   1.87 |        1 |
+|   2.35 |        1 |
+|   1.76 |        2 |
+|   1.99 |        1 |
+|   2.19 |        1 |
++--------+----------+
+
+===== PODEMOS MOSTRAR COM O PESO PARA FICAR PERFEITO =======
+
+SELECT altura,peso, count(*) FROM gafanhotos WHERE peso > 100 GROUP BY altura HAVING altura
+    -> >(select avg(altura) from gafanhotos);
+    Results:
++--------+--------+----------+
+| altura | peso   | count(*) |
++--------+--------+----------+
+|   2.22 | 120.10 |        1 |
+|   1.97 | 132.70 |        1 |
+|   1.87 | 110.12 |        1 |
+|   2.35 | 150.30 |        1 |
+|   1.76 | 110.10 |        2 |
+|   1.99 | 101.30 |        1 |
+|   2.19 | 105.10 |        1 |
++--------+--------+----------+
+
+___________________________________________________________________________________________________________________________________________
+
 
 
