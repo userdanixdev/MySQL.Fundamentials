@@ -27,4 +27,21 @@ GROUP BY carga;
 |       7 | Word    | Curso completo de Word                               |    40 |       30 | 2016 |        2 |
 |      14 | Android | Curso de Desenvolvimento de Aplicativos para Android |    60 |       30 | 2018 |        4 |
 +---------+---------+------------------------------------------------------+-------+----------+------+----------+
+** A DESCRIÇÃO - E O NOME - NECESSÁRIO TIRÁ-LOS PARA DEIXAR A PESQUISA MAIS LIMPA E ESPECÍFICA ***
+Sendo assim:
+
+SELECT carga,totaulas,ano,count(*) FROM cursos WHERE totaulas = '30' GROUP by carga;
+Result:
++-------+----------+------+----------+
+| carga | totaulas | ano  | count(*) |
++-------+----------+------+----------+
+|    40 |       30 | 2016 |        2 |
+|    60 |       30 | 2018 |        4 |
++-------+----------+------+----------+
+Conclusão: O count de qualquer coluna sempre irá 2 cursos de carga de 40horas e 60horas com 4 cursos, ambos com 30 aulas no total.
+----------------------------------------------------------------------------------------------------------------------------------
+__________________________________________________________________________________________________________________________________
+Outro exemplo:
+
+SELECT carga,totaulas,ano,count(*) FROM cursos WHERE totaulas = '30' GROUP by carga;
 
