@@ -180,6 +180,9 @@ Result:
         +-------+----------+
         ++ Portanto, o cálculo da média entre parênteses sempre irá nos deixar atualizados quanto a média acima de 36.33 carga. +++
         ++ Dispensando a atualização manual ++
+        
+        *** Semelhante ao WHERE do SELECT ***  ** O HAVING é para o GROUP BY ***
+__________________________________________________________________________________________________________________________________________                
     
 
 
