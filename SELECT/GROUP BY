@@ -16,4 +16,15 @@ GROUP BY totaulas
 ORDER BY totaulas;
 ** ótimo comando de parâmetro este de cima **
 ---------------------------------------------------------------------------------------------------------------------------
+mysql> select *, count(*)  from cursos  where totaulas = '30' group by carga;  ( no terminal )
+
+Exemplo no WORKBENCH:
+SELECT *, count(*) FROM cursos WHERE totaulas =  '30' 
+GROUP BY carga;
++---------+---------+------------------------------------------------------+-------+----------+------+----------+
+| idcurso | nome    | descricao                                            | carga | totaulas | ano  | count(*) |
++---------+---------+------------------------------------------------------+-------+----------+------+----------+
+|       7 | Word    | Curso completo de Word                               |    40 |       30 | 2016 |        2 |
+|      14 | Android | Curso de Desenvolvimento de Aplicativos para Android |    60 |       30 | 2018 |        4 |
++---------+---------+------------------------------------------------------+-------+----------+------+----------+
 
