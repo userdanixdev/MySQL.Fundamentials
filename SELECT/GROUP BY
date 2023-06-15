@@ -1,0 +1,7 @@
+----------------------------------------------------------------------
+SELECT carga FROM cursos
+GROUP BY carga;
+
+Usando o contador:
+
+SELECT carga,count(nomes
