@@ -1,7 +1,13 @@
 ----------------------------------------------------------------------
+Não podemos usar o DISTINCT por quê o GROUP BY vai além, ele contabiliza 1 de cada 1, mesmo tendo vários repetidos.
+Sendo assim:
+
+USE cadastro;
+SELECT * FROM cursos
 SELECT carga FROM cursos
 GROUP BY carga;
+++ Irá agrupar semelhantes por coluna desejada ++
 
 Usando o contador:
 
-SELECT carga,count(nomes
+SELECT carga,count(nomes)
