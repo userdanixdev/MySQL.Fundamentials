@@ -30,7 +30,7 @@ GROUP BY carga;
 ** A DESCRIÇÃO - E O NOME - NECESSÁRIO TIRÁ-LOS PARA DEIXAR A PESQUISA MAIS LIMPA E ESPECÍFICA ***
 Sendo assim:
 
-SELECT carga,totaulas,ano,count(*) FROM cursos WHERE totaulas = '30' GROUP by carga;
+SELECT carga,totaulas,ano,count(*) FROM cursos WHERE totaulas = '30' GROUP by carga; ** exemplo com o total de aulas igual a 30 **
 Result:
 +-------+----------+------+----------+
 | carga | totaulas | ano  | count(*) |
@@ -43,5 +43,44 @@ Conclusão: O count de qualquer coluna sempre irá 2 cursos de carga de 40horas 
 __________________________________________________________________________________________________________________________________
 Outro exemplo:
 
-SELECT carga,totaulas,ano,count(*) FROM cursos WHERE totaulas = '30' GROUP by carga;
+SELECT carga,totaulas,ano,count(*) FROM cursos GROUP by carga;  Obs: +++ Sem a condição WHERE para totaulas ++++
+
+mysql> SELECT carga,totaulas,ano,count(*) FROM cursos GROUP by carga;
+
++-------+----------+------+----------+
+| carga | totaulas | ano  | count(*) |
++-------+----------+------+----------+
+|    40 |       37 | 2014 |        9 |
+|    20 |       15 | 2014 |        4 |
+|    10 |        8 | 2014 |        1 |
+|    30 |       15 | 2016 |        8 |
+|    60 |       35 | 2016 |        5 |
+|    35 |       18 | 2017 |        1 |
+|    15 |        8 | 2018 |        1 |
+|    50 |       25 | 2019 |        1 |
++-------+----------+------+----------+
+
+_____________________________________________________________________________________________________________________________________________
+
+SELECT carga,totaulas,ano,count(*) FROM cursos GROUP by totaulas;
+
+OBS: AGRUPADOS POR 'TOTAL de AULAS' - coluna 'totaulas' --
+RESULT:
++-------+----------+------+----------+
+| carga | totaulas | ano  | count(*) |
++-------+----------+------+----------+
+|    40 |       37 | 2014 |        1 |
+|    20 |       15 | 2014 |        4 |
+|    10 |        8 | 2014 |        2 |
+|    40 |       20 | 2015 |        2 |
+|    40 |       29 | 2015 |        1 |
+|    40 |       30 | 2016 |        6 |
+|    40 |       18 | 2017 |        2 |
+|    60 |       35 | 2016 |        1 |
+|    40 |       25 | 2017 |        2 |
+|    30 |       12 | 2017 |        5 |
+|    20 |       10 | 2017 |        2 |
+|    20 |        9 | 2010 |        1 |
+|    30 |       11 | 2010 |        1 |
++-------+----------+------+----------+
 
