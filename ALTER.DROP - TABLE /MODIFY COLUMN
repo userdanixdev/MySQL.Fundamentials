@@ -5,4 +5,5 @@ ________________________________
 ALTER TABLE carros_velhos
 MODIFY COLUMN id_carros INT NOT NULL
              (TIPO PRIMITIVO) e (CONSTRAINTS) por exemplo.
+------------------------------------------------------------------------------------------------------------------------------------------------
              
