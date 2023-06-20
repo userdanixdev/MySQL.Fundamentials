@@ -15,7 +15,7 @@ values (1,'Brasília','volkswagen','1980');
 
 (para verificar se deu certo digite: SELECT * FROM carros_velhos)
 
-____________________________________________________________________
+__________________________________________________________________________________________________________________________
 Outro exemplo mais claro desse comando abaixo:
 
 insert into carros_antigos
