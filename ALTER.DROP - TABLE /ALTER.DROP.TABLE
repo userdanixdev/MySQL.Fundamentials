@@ -10,7 +10,7 @@ ALTER TABLE carros_velhos
 ADD COLUMN ano_producao YEAR
 
 O comando DROP TABLE exlui a tabela.
-______________________________________________________
+________________________________________________________________________________________________________________________
 Se quiser excluir somente um campo ou coluna é :
 
 ALTER TABLE carros_velhos
