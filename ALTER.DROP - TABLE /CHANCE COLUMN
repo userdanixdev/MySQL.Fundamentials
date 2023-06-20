@@ -5,4 +5,4 @@ CHANGE COLUMN id_carros ident_carros INT NOT NULL DEFAULT ou INT PRIMARY KEY
 
 O change modifica o nome da coluna, porém, se por padrão ou atualização da versão não tiver as constraints. TERÁ QUE COLOCAR AS CONSTRAINTS.
 
-___________________________________________________________
+____________________________________________________________________________________________________________________________________________
