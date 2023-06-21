@@ -2,14 +2,160 @@ Esse comando ,sem o asterisco, irá FILTRAR as colunas que deseja e na ORDEM que
 Sendo assim:
 
 SELECT nome, carga, ano FROM cursos;
-OU COMO PREFERIR:
+Assim:
++--------------------+-------+------+
+| nome               | carga | ano  |
++--------------------+-------+------+
+| HTML5              |    40 | 2014 |
+| Algoritmos         |    20 | 2014 |
+| Photoshop5         |    10 | 2014 |
+| PHP                |    40 | 2015 |
+| Java               |    40 | 2015 |
+| MySQL              |    30 | 2016 |
+| Word               |    40 | 2016 |
+| Python             |    40 | 2017 |
+| POO                |    60 | 2016 |
+| Excel              |    40 | 2017 |
+| Responsividade     |    30 | 2018 |
+| C++                |    40 | 2017 |
+| C#                 |    30 | 2017 |
+| Android            |    60 | 2018 |
+| JavaScript         |    35 | 2017 |
+| PowerPoint         |    30 | 2018 |
+| Swift              |    60 | 2019 |
+| Hardware           |    30 | 2017 |
+| Redes              |    40 | 2016 |
+| Segurança          |    15 | 2018 |
+| SEO                |    30 | 2017 |
+| Premiere           |    20 | 2017 |
+| After Effects      |    20 | 2018 |
+| WordPress          |    60 | 2019 |
+| Joomla             |    60 | 2019 |
+| Magento            |    50 | 2019 |
+| Modelagem de Dados |    30 | 2020 |
+| HTML4              |    20 | 2010 |
+| PHP7               |    40 | 2020 |
+| PHP4               |    30 | 2010 |
++--------------------+-------+------+
+
+OU COMO PREFERIR, separados por 'CARGA' primeiro, assim:
 SELECT carga, ano, nome FROM cursos;
+
++-------+------+--------------------+
+| carga | ano  | nome               |
++-------+------+--------------------+
+|    40 | 2014 | HTML5              |
+|    20 | 2014 | Algoritmos         |
+|    10 | 2014 | Photoshop5         |
+|    40 | 2015 | PHP                |
+|    40 | 2015 | Java               |
+|    30 | 2016 | MySQL              |
+|    40 | 2016 | Word               |
+|    40 | 2017 | Python             |
+|    60 | 2016 | POO                |
+|    40 | 2017 | Excel              |
+|    30 | 2018 | Responsividade     |
+|    40 | 2017 | C++                |
+|    30 | 2017 | C#                 |
+|    60 | 2018 | Android            |
+|    35 | 2017 | JavaScript         |
+|    30 | 2018 | PowerPoint         |
+|    60 | 2019 | Swift              |
+|    30 | 2017 | Hardware           |
+|    40 | 2016 | Redes              |
+|    15 | 2018 | Segurança          |
+|    30 | 2017 | SEO                |
+|    20 | 2017 | Premiere           |
+|    20 | 2018 | After Effects      |
+|    60 | 2019 | WordPress          |
+|    60 | 2019 | Joomla             |
+|    50 | 2019 | Magento            |
+|    30 | 2020 | Modelagem de Dados |
+|    20 | 2010 | HTML4              |
+|    40 | 2020 | PHP7               |
+|    30 | 2010 | PHP4               |
++-------+------+--------------------+
+30 rows in set (0.00 sec)
 ______________________________________________________________________________________________________________
 
-Porém, a tabela toda fica BAGUNÇADA. Sendo assim precisa de ORDEM sendo assim:
+Ou seperados por um ponto (.), um detalhe, que irá ter o mesmo resultado, assim:
+
+SELECT cursos.nome FROM cursos;
++--------------------+
+| nome               |
++--------------------+
+| After Effects      |
+| Algoritmos         |
+| Android            |
+| C#                 |
+| C++                |
+| Excel              |
+| Hardware           |
+| HTML4              |
+| HTML5              |
+| Java               |
+| JavaScript         |
+| Joomla             |
+| Magento            |
+| Modelagem de Dados |
+| MySQL              |
+| Photoshop5         |
+| PHP                |
+| PHP4               |
+| PHP7               |
+| POO                |
+| PowerPoint         |
+| Premiere           |
+| Python             |
+| Redes              |
+| Responsividade     |
+| Segurança          |
+| SEO                |
+| Swift              |
+| Word               |
+| WordPress          |
++--------------------+
+30 rows in set (0.00 sec)
+
+Porém, se a  tabela ficar 'BAGUNÇADA'. Precisará de 'ORDEM', sendo assim:
 
 SELECT nome, carga, ano FROM cursos
 ORDER BY ano;
+
++--------------------+-------+------+
+| nome               | carga | ano  |
++--------------------+-------+------+
+| HTML4              |    20 | 2010 |
+| PHP4               |    30 | 2010 |
+| HTML5              |    40 | 2014 |
+| Algoritmos         |    20 | 2014 |
+| Photoshop5         |    10 | 2014 |
+| PHP                |    40 | 2015 |
+| Java               |    40 | 2015 |
+| MySQL              |    30 | 2016 |
+| Word               |    40 | 2016 |
+| POO                |    60 | 2016 |
+| Redes              |    40 | 2016 |
+| Python             |    40 | 2017 |
+| Excel              |    40 | 2017 |
+| C++                |    40 | 2017 |
+| C#                 |    30 | 2017 |
+| JavaScript         |    35 | 2017 |
+| Hardware           |    30 | 2017 |
+| SEO                |    30 | 2017 |
+| Premiere           |    20 | 2017 |
+| Responsividade     |    30 | 2018 |
+| Android            |    60 | 2018 |
+| PowerPoint         |    30 | 2018 |
+| Segurança          |    15 | 2018 |
+| After Effects      |    20 | 2018 |
+| Swift              |    60 | 2019 |
+| WordPress          |    60 | 2019 |
+| Joomla             |    60 | 2019 |
+| Magento            |    50 | 2019 |
+| Modelagem de Dados |    30 | 2020 |
+| PHP7               |    40 | 2020 |
++--------------------+-------+------+
 
 *** Portanto, completando o comando por ORDER BY, irá ORGANIZAR as SELEÇÕES FEITAS do primeiro comando acima ***
 _________________________________________________________________________________________________________________
