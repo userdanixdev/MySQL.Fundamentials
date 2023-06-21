@@ -1,0 +1,8 @@
+Use o comando AS para 'abreviar' ou 'apelidar' os nomes:
+
+SELECT g.nome, c.nome, c.ano FROM gafanhotos AS g inner JOIN cursos AS c
+ON c.idcurso = g.cursopreferido
+ORDER BY g.nome;
+
+**** O comando funcionará da mesma forma, de acordo com o arquivo 'foreign key e join'.
+-----------------------------------------------------------------------------------------------------------------------------------------------
