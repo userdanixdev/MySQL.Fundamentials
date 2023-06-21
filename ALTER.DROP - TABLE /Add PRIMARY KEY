@@ -48,5 +48,29 @@ SELECT * FROM carros;
 |         8 | Vectra 2.2  | NULL   | 2002 | NULL      | Chevrolet |
 |         9 | Corsa 1.4   | NULL   | 2000 | NULL      | Chevrolet |
 +-----------+-------------+--------+------+-----------+-----------+
+_______________________________________________________________________________________________________________________________________________________
+
+DROPEI a coluna 'id_modelo', para criar uma nova com a chave primária. Ou poderia usar 'DELETE' para limpar os registros.
+Sendo assim: 
+
+SELECT * FROM carros;
++-------------+--------+------+-----------+-----------+
+| modelo_nome | motor_ | ano_ | cor_carro | marca_    |
++-------------+--------+------+-----------+-----------+
+| Corsa       | NULL   | 1995 | NULL      | GM        |
+| NULL        | NULL   | NULL | NULL      | NULL      |
+| NULL        | NULL   | NULL | NULL      | NULL      |
+| NULL        | NULL   | 1997 | NULL      | NULL      |
+| astra       | NULL   | 2002 | NULL      | NULL      |
+| NULL        | NULL   | NULL | NULL      | Chevrolet |
+| corsa       | NULL   | 1995 | NULL      | GM        |
+| astra       | NULL   | 1997 | NULL      | Chevrolet |
+| astra 2.0   | NULL   | 2002 | NULL      | Chevrolet |
+| astra 2.0   | NULL   | 2005 | NULL      | Chevrolet |
+| Vectra      | NULL   | 2002 | NULL      | Chevrolet |
+| Vectra 2.2  | NULL   | 2002 | NULL      | Chevrolet |
+| Corsa 1.4   | NULL   | 2000 | NULL      | Chevrolet |
++-------------+--------+------+-----------+-----------+
+
 
 
