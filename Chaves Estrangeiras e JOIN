@@ -58,9 +58,11 @@ ________________________________________________________________________________
 3 - Adicionar registros na linha criada 'cursopreferido':
 
 UPDATE gafanhotos SET cursopreferido = '6' WHERE id = '1';
+________________________________________________________________________________________________________________________________________________________________________________________________________
 Obs: Sendo assim, não irá conseguir deletar por comando, por que a CONSTRANGE é FOREIGN KEY, ou seja, chave estrangeira.
 +++++ Só conseguirá apagar se não existir relação nenhuma com a outra tabela ++++
 Ou seja: Chama-se INTEGRIDADE REFERENCIAL - Ele não poderá ser apagado, para não afetar a transação. ***
 __________________________________________________________________________________________________________________________________________________________________________________________________
+4 - SELECT gafanhotos.nome, cursos.nome from gafanhotos;
 
 
