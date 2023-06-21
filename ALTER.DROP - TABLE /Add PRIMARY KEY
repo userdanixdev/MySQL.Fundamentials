@@ -2,7 +2,17 @@ Para adicionar uma primary key é um comando específico:
 
 ALTER TABLE carros_antigos
 ADD PRIMARY KEY (ident_carros)
-
+Assim:
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| ident_carro   | int         | NO   | PRI | NULL    |       |
+| modelo_carro  | varchar(10) | YES  |     | NULL    |       |
+| marca_carro   | varchar(10) | YES  |     | NULL    |       |
+| ano_carro     | year        | YES  |     | NULL    |       |
+| ano_producao  | year        | YES  |     | NULL    |       |
+| apelido_carro | varchar(10) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
 _____________________________________________________________________________________________________________________________________________
 **  OU SEJA COLOCAR ENTRE PARÊNTESES O CAMPO EM QUE DESEJA COLOCAR A CHAVE PRIMÁRIA **
 _____________________________________________________________________________________________________________________________________________
