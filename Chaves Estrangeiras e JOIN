@@ -59,7 +59,8 @@ ________________________________________________________________________________
 
 UPDATE gafanhotos SET cursopreferido = '6' WHERE id = '1';
 Obs: Sendo assim, não irá conseguir deletar por comando, por que a CONSTRANGE é FOREIGN KEY, ou seja, chave estrangeira.
-+++++ Só conseguirá apagar se não existir relação nenhuma ++++
-Como assim?
++++++ Só conseguirá apagar se não existir relação nenhuma com a outra tabela ++++
+Ou seja: Chama-se INTEGRIDADE REFERENCIAL - Ele não poderá ser apagado, para não afetar a transação. ***
+__________________________________________________________________________________________________________________________________________________________________________________________________
 
 
