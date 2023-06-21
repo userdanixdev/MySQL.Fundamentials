@@ -50,7 +50,7 @@ SELECT * FROM carros;
 +-----------+-------------+--------+------+-----------+-----------+
 _______________________________________________________________________________________________________________________________________________________
 
-DROPEI a coluna 'id_modelo', para criar uma nova com a chave primária. Ou poderia usar 'DELETE' para limpar os registros.
+DROPEI a coluna 'id_modelo', para criar uma nova com a chave primária. (Ou poderia usar 'DELETE' para limpar os registros.)
 Sendo assim: 
 
 SELECT * FROM carros;
@@ -71,6 +71,30 @@ SELECT * FROM carros;
 | Vectra 2.2  | NULL   | 2002 | NULL      | Chevrolet |
 | Corsa 1.4   | NULL   | 2000 | NULL      | Chevrolet |
 +-------------+--------+------+-----------+-----------+
+
+ALTER TABLE carros ADD COLUMN ident_carros int FIRST;
+
+Sendo feito:
++--------------+-------------+--------+------+-----------+-----------+
+| ident_carros | modelo_nome | motor_ | ano_ | cor_carro | marca_    |
++--------------+-------------+--------+------+-----------+-----------+
+|         NULL | Corsa       | NULL   | 1995 | NULL      | GM        |
+|         NULL | NULL        | NULL   | NULL | NULL      | NULL      |
+|         NULL | NULL        | NULL   | NULL | NULL      | NULL      |
+|         NULL | NULL        | NULL   | 1997 | NULL      | NULL      |
+|         NULL | astra       | NULL   | 2002 | NULL      | NULL      |
+|         NULL | NULL        | NULL   | NULL | NULL      | Chevrolet |
+|         NULL | corsa       | NULL   | 1995 | NULL      | GM        |
+|         NULL | astra       | NULL   | 1997 | NULL      | Chevrolet |
+|         NULL | astra 2.0   | NULL   | 2002 | NULL      | Chevrolet |
+|         NULL | astra 2.0   | NULL   | 2005 | NULL      | Chevrolet |
+|         NULL | Vectra      | NULL   | 2002 | NULL      | Chevrolet |
+|         NULL | Vectra 2.2  | NULL   | 2002 | NULL      | Chevrolet |
+|         NULL | Corsa 1.4   | NULL   | 2000 | NULL      | Chevrolet |
++--------------+-------------+--------+------+-----------+-----------+
+
+POR FIM , ADICIONAR A CHAVE PRIMÁRIA 
+
 
 
 
