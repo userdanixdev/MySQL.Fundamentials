@@ -1,1 +1,3 @@
+O comando OUTER JOIN precisa ter uma preferência: 'right' ligado a alguma chave nomeada ou 'left' ligado a outra chave.
+No caso da tabela 'CADASTRO', dump (backup) e nos registro anteriores (arquivos) podemos usar o ' OUTER JOIN' da seguinte forma:
 
