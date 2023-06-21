@@ -54,3 +54,7 @@ REFERENCE cursos(idcurso)  - ***Obs: Precisa fazer a ligação entre a chave est
 +----------------+---------------+------+-----+---------+----------------+
 +++  MUL??  Chave múltiplica, ou seja, uma chave estrangeira, por identificação. +++
 __________________________________________________________________________________________________________________________________________________________
+
+3 - Adicionar registros na linha criada 'cursopreferido':
+
+UPDATE gafanhotos SET cursopreferido = '6' WHERE id = '1';
