@@ -58,3 +58,5 @@ ________________________________________________________________________________
 3 - Adicionar registros na linha criada 'cursopreferido':
 
 UPDATE gafanhotos SET cursopreferido = '6' WHERE id = '1';
+Obs: Sendo assim, não irá conseguir deletar por comando, por que a CONSTRANGE é FOREIGN KEY, ou seja, chave estrangeira.
+
