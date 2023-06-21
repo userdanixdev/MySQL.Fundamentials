@@ -53,4 +53,4 @@ REFERENCE cursos(idcurso)  - ***Obs: Precisa fazer a ligação entre a chave est
 | cursopreferido | int           | YES  | MUL | NULL    |                |
 +----------------+---------------+------+-----+---------+----------------+
 +++  MUL??  Chave múltiplica, ou seja, uma chave estrangeira, por identificação. +++
-
+__________________________________________________________________________________________________________________________________________________________
