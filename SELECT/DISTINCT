@@ -22,13 +22,21 @@ Note que a nacionalidade 'Brasil' apareceu várias vezes e se repetindo.
 
 Exemplo: SELECT DISTINCT nacionalidade FROM gafanhotos:
 
-nacionalidade
-Brasil
-Portugal
-Moçambique
-Irlanda
-EUA
-...
++---------------+
+| nacionalidade |
++---------------+
+| Brasil        |
+| Portugal      |
+| Moçambique    |
+| Irlanda       |
+| EUA           |
+| França        |
+| Japão         |
+| Canadá        |
+| Angola        |
+| Alemanha      |
+| Itália        |
++---------------+
 
 ***  Portanto assim irá aparecer todas as nacionalidades selecionadas ,inclusive o 'Brasil' sem repeti-los. Irá aparecer somente 1 (um) de cada. ***
 ______________________________________________________________________________________________________________________________________________________________
@@ -37,17 +45,24 @@ Obs: Use o ORDER BY nacionalidade;  ---- Para ordenar e deixar a lista mais orga
 Exemplo:
 
 SELECT DISTINCT nacionalidade FROM gafanhotos
-ORDER BY nacionalidade
+ORDER BY nacionalidade;
 
-nacionalidade
-Alemanha
-Angola
-Brasil
-Canadá
-EUA
-França
-Irlanda
-....
++---------------+
+| nacionalidade |
++---------------+
+| Alemanha      |
+| Angola        |
+| Brasil        |
+| Canadá        |
+| EUA           |
+| França        |
+| Irlanda       |
+| Itália        |
+| Japão         |
+| Moçambique    |
+| Portugal      |
++---------------+
+
 _________________________________________________________________________________________________________________________
 
 
