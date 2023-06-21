@@ -1,1 +1,4 @@
+No dumb , final do arquivo temos uma informação preciosa:
+
+a ENGINE, por padrão do MYSQL, o InnoDB que é uma máquina, um mecanismo que pertence a ORACLE que permite a criação de tabelas que suportam chaves ESTRANGEIRAS.
 
