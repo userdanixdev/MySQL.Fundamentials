@@ -63,6 +63,28 @@ Obs: Sendo assim, não irá conseguir deletar por comando, por que a CONSTRANGE 
 +++++ Só conseguirá apagar se não existir relação nenhuma com a outra tabela ++++
 Ou seja: Chama-se INTEGRIDADE REFERENCIAL - Ele não poderá ser apagado, para não afetar a transação. ***
 __________________________________________________________________________________________________________________________________________________________________________________________________
-4 - SELECT gafanhotos.nome, cursos.nome from gafanhotos;
+
+4 - SELECT gafanhotos.nome, cursos.cursopreferido,cursos.nome,cursos.ano FROM gafanhotos JOIN cursos;
+---- OBS: Irá juntar todas as colunas com o a tabela cursos, porém, precisamos de mais um parâmentro ; o 'ON' para 'juntar' de maneira 'COESA'.
+***** Não irei mostar a tela aqui pq a amostra será imensa ******   +++ Execute no terminal ++++
+
+Sendo assim com a 'cláusula' ON, ficará:
+
+SELECT gafanhotos.nome, cursos.cursopreferido,cursos.nome,cursos.ano FROM gafanhotos JOIN cursos
+ON cursos.idcurso = gafanhotos.cursopreferido;
+Sendo assim:
++-------------------+----------------+------------+------+
+| nome              | cursopreferido | nome       | ano  |
++-------------------+----------------+------------+------+
+| Daniel Morais     |              1 | HTML5      | 2014 |
+| Talita Nascimento |              2 | Algoritmos | 2014 |
++-------------------+----------------+------------+------+
+
+Observe que somente o 'daniel' e 'talita' tem códigos de ligação de 'gafanhotos.cursopreferido' e 'cursos.idcursos'
+os outros estão NULOS,ou seja, não foram renomeados ou não foram ligadas conexões de chave primária com estrangeira.
+
+++++ DE QUALQUER FORMA, SEM O ON, IRÁ FAZER A JUNÇÃO DO MESMO JEITO ++++
+-----------------------------------------------------------------------------------------------------------------------------------
+
 
 
