@@ -81,7 +81,7 @@ Sendo assim:
 +-------------------+----------------+------------+------+
 
 Observe que somente o 'daniel' e 'talita' tem códigos de ligação de 'gafanhotos.cursopreferido' e 'cursos.idcursos'
-os outros estão NULOS,ou seja, não foram renomeados ou não foram ligadas conexões de chave primária com estrangeira.
+os outros estão NULOS,ou seja, não foram renomeados ou não foram ligadas conexões de chave primária = 'idcursos' com estrangeira = 'cursopreferido' de gafanhotos.
 
 ++++ DE QUALQUER FORMA, SEM O ON, IRÁ FAZER A JUNÇÃO DO MESMO JEITO ++++
 -----------------------------------------------------------------------------------------------------------------------------------
