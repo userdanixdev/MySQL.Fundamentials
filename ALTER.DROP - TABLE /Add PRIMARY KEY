@@ -16,3 +16,37 @@ Assim:
 _____________________________________________________________________________________________________________________________________________
 **  OU SEJA COLOCAR ENTRE PARÊNTESES O CAMPO EM QUE DESEJA COLOCAR A CHAVE PRIMÁRIA **
 _____________________________________________________________________________________________________________________________________________
+No caso da tabela 'carros' é diferente por que já foi criada a coluna 'id_modelo' e foi colocado 'registros', portanto, dará erro ao colocar chave primária.
+**** ENTRADAS DUPLICADAS ***
+DESCRIBE carros;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| id_modelo   | int         | YES  |     | NULL    |       |
+| modelo_nome | varchar(10) | YES  |     | NULL    |       |
+| motor_      | varchar(20) | YES  |     | NULL    |       |
+| ano_        | year        | YES  |     | NULL    |       |
+| cor_carro   | varchar(20) | YES  |     | NULL    |       |
+| marca_      | varchar(10) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+SELECT * FROM carros;
++-----------+-------------+--------+------+-----------+-----------+
+| id_modelo | modelo_nome | motor_ | ano_ | cor_carro | marca_    |
++-----------+-------------+--------+------+-----------+-----------+
+|         2 | Corsa       | NULL   | 1995 | NULL      | GM        |
+|         1 | NULL        | NULL   | NULL | NULL      | NULL      |
+|      NULL | NULL        | NULL   | NULL | NULL      | NULL      |
+|      NULL | NULL        | NULL   | 1997 | NULL      | NULL      |
+|         2 | astra       | NULL   | 2002 | NULL      | NULL      |
+|      NULL | NULL        | NULL   | NULL | NULL      | Chevrolet |
+|         2 | corsa       | NULL   | 1995 | NULL      | GM        |
+|         2 | astra       | NULL   | 1997 | NULL      | Chevrolet |
+|         5 | astra 2.0   | NULL   | 2002 | NULL      | Chevrolet |
+|         6 | astra 2.0   | NULL   | 2005 | NULL      | Chevrolet |
+|         7 | Vectra      | NULL   | 2002 | NULL      | Chevrolet |
+|         8 | Vectra 2.2  | NULL   | 2002 | NULL      | Chevrolet |
+|         9 | Corsa 1.4   | NULL   | 2000 | NULL      | Chevrolet |
++-----------+-------------+--------+------+-----------+-----------+
+
+
