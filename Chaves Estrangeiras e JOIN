@@ -9,3 +9,48 @@ I = Isolamento
 D = Durabilidade
 ** Para transações **
 ___________________________________________________________________________________________________________________________________________________________
+A idéia é LEVAR um atributo da ENTIDADE 'CURSOS' para a ENTIDADE 'GAFANHOTO' = Chave estrangeira 
+---------------------------------------------------------------------------------------------------------------------------
+**** ATENÇÃO *** : a A chave estrangeira precisa ter o mesmo tipo primitivo e tamanho. Ex: Varchar(10) = Varchar(10)
+O campo novo então será adicionado assim:
+
+1- Adicionar um campo novo na tabela 'GAFANHOTOS':
+
+ALTER TABLE gafanhotos
+ADD COLUMN cursopreferido int;
+
++----------------+---------------+------+-----+---------+----------------+
+| Field          | Type          | Null | Key | Default | Extra          |
++----------------+---------------+------+-----+---------+----------------+
+| id             | int           | NO   | PRI | NULL    | auto_increment |
+| nome           | varchar(30)   | NO   |     | NULL    |                |
+| profissao      | varchar(20)   | YES  |     | NULL    |                |
+| nascimento     | date          | YES  |     | NULL    |                |
+| sexo           | enum('M','F') | YES  |     | NULL    |                |
+| peso           | decimal(5,2)  | YES  |     | NULL    |                |
+| altura         | decimal(3,2)  | YES  |     | NULL    |                |
+| nacionalidade  | varchar(20)   | YES  |     | Brasil  |                |
+| cursopreferido | int           | YES  |     | NULL    |                |
++----------------+---------------+------+-----+---------+----------------+
+
+2 - Adicionar chave estrangeira:
+
+ALTER TABLE gafanhotos
+ADD FOREIGN KEY (cursopreferido)
+REFERENCE cursos(idcurso)  - ***Obs: Precisa fazer a ligação entre a chave estrangeira e a chave primária da tabela CURSOS que no caso é 'idcursos'.
+
++----------------+---------------+------+-----+---------+----------------+
+| Field          | Type          | Null | Key | Default | Extra          |
++----------------+---------------+------+-----+---------+----------------+
+| id             | int           | NO   | PRI | NULL    | auto_increment |
+| nome           | varchar(30)   | NO   |     | NULL    |                |
+| profissao      | varchar(20)   | YES  |     | NULL    |                |
+| nascimento     | date          | YES  |     | NULL    |                |
+| sexo           | enum('M','F') | YES  |     | NULL    |                |
+| peso           | decimal(5,2)  | YES  |     | NULL    |                |
+| altura         | decimal(3,2)  | YES  |     | NULL    |                |
+| nacionalidade  | varchar(20)   | YES  |     | Brasil  |                |
+| cursopreferido | int           | YES  | MUL | NULL    |                |
++----------------+---------------+------+-----+---------+----------------+
++++  MUL??  Chave múltiplica, ou seja, uma chave estrangeira, por identificação. +++
+
