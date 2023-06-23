@@ -86,6 +86,20 @@ os outros estão NULOS,ou seja, não foram renomeados ou não foram ligadas cone
 ++++ DE QUALQUER FORMA, SEM O ON, IRÁ FAZER A JUNÇÃO DO MESMO JEITO ++++
 -----------------------------------------------------------------------------------------------------------------------------------
 Uso de INNER JOIN com três tabelas.
+1- A tabela 'cursos' já temos.
+2 - A tabela 'gafanhotos' também.
+3 - Criar uma terceira tabela, para intermediar as tabelas 'cursos' e 'gafanhotos'.
+Sendo assim, criemos a terceira tabela, desta forma:
+
+1- O conceito é, antes de começar, 'gafanhotos' preferem um curso preferido, ou seja, cada de vários gafanhotos preferem um curso (n,1).
+2 - E um (1) curso pode ser preferido por vários gafanhotos.(1,n).
+** Sendo assim, a chave primária (idcurso) de cursos irá se tornar uma chave estrangeira de gafanhotos com o nome 'cursopreferido'(chave estrangeira).
+
+
+CREATE TABLE gafanhoto
+
+
+
 
 
 
