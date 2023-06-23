@@ -134,6 +134,12 @@ Inserindo registros na tabela criada 'assiste':
 INSERT INTO gafanhotos_assiste_curso VALUES
 (DEFAULT, '2014-01-01','1','2');
 
++----+------------+-------------+---------+
+| id | data       | idgafanhoto | idcurso |
++----+------------+-------------+---------+
+|  1 | 2014-01-01 |           1 |       2 |
++----+------------+-------------+---------+
+
 
 
 
