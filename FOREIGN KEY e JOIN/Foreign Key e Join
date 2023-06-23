@@ -102,7 +102,7 @@ Sendo assim, criemos a terceira tabela, desta forma:
 Para isso é necessário:
               1 - Trazer a chave primária de 'gafanhotos' para a ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim, se tornaria chave estrangeira.
               2 - Trazer a chave primária de 'cursos' para A ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim ela deve se tornar chave estrangeira.
-              3 - Nomear a tabela, portanto.
+              3 - Nomear a tabela, portanto:
                 
 CREATE TABLE gafanhoto_assiste_curso (
 id int NOT NULL AUTO_INCREMENT,
@@ -111,6 +111,7 @@ idgafanhoto int,
 idcurso int,
 PRIMARY KEY (id),
 FOREIGN KEY (idgafanhoto) REFERENCES gafanhotos(id)
+FOREIGN KEY (idcurso) REFERENCES cursos(idcurso)
 
 
 
