@@ -100,9 +100,9 @@ Sendo assim, criemos a terceira tabela, desta forma:
 4 -  Gerar um relacionamento de muitos para muitos,ou seja, criar um tabela de relacionamento entre eles.
 
 Para isso é necessário:
-              1 - Trazer a chave primária de 'gafanhotos' para a ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim, se tornaria chave estrangeira.
-              2 - Trazer a chave primária de 'cursos' para A ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim ela deve se tornar chave estrangeira.
-              3 - Nomear a tabela, portanto:
+     1 - Trazer a chave primária de 'gafanhotos' para a ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim, se tornaria chave estrangeira.
+       2 - Trazer a chave primária de 'cursos' para A ENTIDADE CENTRAL, relacionamento 'assiste', sendo assim ela deve se tornar chave estrangeira.
+          3 - Nomear a tabela, portanto:
                 
 CREATE TABLE gafanhoto_assiste_curso (
 id int NOT NULL AUTO_INCREMENT,
@@ -112,7 +112,18 @@ idcurso int,
 PRIMARY KEY (id),
 FOREIGN KEY (idgafanhoto) REFERENCES gafanhotos(id)
 FOREIGN KEY (idcurso) REFERENCES cursos(idcurso) 
-)
+);
+
++-------------+------+------+-----+---------+----------------+
+| Field       | Type | Null | Key | Default | Extra          |
++-------------+------+------+-----+---------+----------------+
+| id          | int  | NO   | PRI | NULL    | auto_increment |
+| data        | date | YES  |     | NULL    |                |
+| idgafanhoto | int  | YES  | MUL | NULL    |                |
+| idcurso     | int  | YES  | MUL | NULL    |                |
++-------------+------+------+-----+---------+----------------+
+Criada a ENTIDADE 'gafanhoto_assiste_curso'
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
