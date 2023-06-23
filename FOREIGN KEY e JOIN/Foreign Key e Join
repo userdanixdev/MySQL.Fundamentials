@@ -124,6 +124,19 @@ FOREIGN KEY (idcurso) REFERENCES cursos(idcurso)
 +-------------+------+------+-----+---------+----------------+
 Criada a ENTIDADE 'gafanhoto_assiste_curso'
 ---------------------------------------------------------------------------------------------------------------------------------------------
+Sendo assim, o conceito fica:
+
+GAFANHOTO (1) ------ (n)assistente de relação(n) ------ (1) Curso
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
+Inserindo registros na tabela criada 'assiste':
+
+INSERT INTO gafanhotos_assiste_curso VALUES
+(DEFAULT, '2014-01-01','1','2');
+
+
+
+
 
 
 
