@@ -198,8 +198,25 @@ ORDER BY g.nome;
 +--------------------+---------+
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-Queremos não mais o código do curso, além disso, o 'NOME' do curso:
+Queremos não mais o código do curso, além disso, o 'NOME' do curso.
+O nomes do curso estão na terceira tabela, do curso. Usaremos mais um JOIN.
+Sendo assim:
 
+SELECT g.nome, c.nome FROM gafanhotos g 
+JOIN gafanhoto_assiste_curso a
+ON g.id = a.idgafanhoto
+JOIN cursos c 
+ON c.idcurso = a.idcurso;
+
++--------------------+------------+
+| nome               | nome       |
++--------------------+------------+
+| Daniel Morais      | Algoritmos |
+| Josiane Dutra      | Excel      |
+| Guilherme de Sousa | C++        |
+| Emerson Gabriel    | MySQL      |
++--------------------+------------+
+** ESSES SÃO OS NOMES,PORTANTO, DOS CÓDIGOS DOS CURSOS ***
 
 
 
