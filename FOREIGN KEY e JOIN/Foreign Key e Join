@@ -171,6 +171,34 @@ SELECT * FROM gafanhotos g JOIN gafanhoto_assiste_curso a ON g.id = a.idgafanhot
 |  3 | Emerson Gabriel    | Programador          | 1920-12-30 | M    |  50.20 |   1.65 | Moçambique    |           NULL |  4 | 2015-12-22 |           3 |       6 |
 +----+--------------------+----------------------+------------+------+--------+--------+---------------+----------------+----+------------+-------------+---------+
 
+Simplificando a tabela juntada fica:
+
+SELECT g.id, g.nome, a.idgafanhoto, idcurso FROM gafanhotos g JOIN gafanhoto_assiste_curso a ON g.id = a.idgafanhoto;
+
++----+--------------------+-------------+---------+
+| id | nome               | idgafanhoto | idcurso |
++----+--------------------+-------------+---------+
+|  1 | Daniel Morais      |           1 |       2 |
+| 15 | Josiane Dutra      |          15 |      10 |
+| 22 | Guilherme de Sousa |          22 |      12 |
+|  3 | Emerson Gabriel    |           3 |       6 |
++----+--------------------+-------------+---------+
+
+SELECT g.nome, idcurso FROM gafanhotos g JOIN gafanhoto_assiste_curso a
+ON g.id = a.idgafanhoto
+ORDER BY g.nome;
+
++--------------------+---------+
+| nome               | idcurso |
++--------------------+---------+
+| Daniel Morais      |       2 |
+| Emerson Gabriel    |       6 |
+| Guilherme de Sousa |      12 |
+| Josiane Dutra      |      10 |
++--------------------+---------+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Queremos não mais o código do curso, além disso, o 'NOME' do curso:
 
 
 
