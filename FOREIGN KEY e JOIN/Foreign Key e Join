@@ -111,7 +111,8 @@ idgafanhoto int,
 idcurso int,
 PRIMARY KEY (id),
 FOREIGN KEY (idgafanhoto) REFERENCES gafanhotos(id)
-FOREIGN KEY (idcurso) REFERENCES cursos(idcurso)
+FOREIGN KEY (idcurso) REFERENCES cursos(idcurso) 
+)
 
 
 
