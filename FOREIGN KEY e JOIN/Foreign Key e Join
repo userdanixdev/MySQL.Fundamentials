@@ -91,12 +91,13 @@ Uso de INNER JOIN com três tabelas.
 3 - Criar uma terceira tabela, para intermediar as tabelas 'cursos' e 'gafanhotos'.
 Sendo assim, criemos a terceira tabela, desta forma:
 
-1- O conceito é, antes de começar, 'gafanhotos' preferem um curso preferido, ou seja, cada de vários gafanhotos preferem um curso (n,1).
+1- O conceito é, antes de começar, 'gafanhotos' preferem um curso preferido, ou seja, cada, de vários gafanhotos, preferem um curso (n,1).
 2 - E um (1) curso pode ser preferido por vários gafanhotos.(1,n).
 ** Sendo assim, a chave primária (idcurso) de cursos irá se tornar uma chave estrangeira de gafanhotos com o nome 'cursopreferido'(chave estrangeira).
+*** Estão acima, nesse arquivo ***
+
 3 - E OS RELACIONAMENTOS MUITOS PARA MUITOS?????
-
-
+4 -  Gerar um relacionamento de muitos para muitos,ou seja, criar um tabela de relacionamento entre eles.
 CREATE TABLE gafanhoto
 
 
