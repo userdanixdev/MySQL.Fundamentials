@@ -134,4 +134,5 @@ SAVEPOINT	| Salvar temporariamente uma transação para que seja possível efetu
   
    #### Esses sites estão sujeitos a alterações e atualizações sem aviso nenhum.
    ***
+   ~Haverá atualizações a serem feitas no curso~
    
