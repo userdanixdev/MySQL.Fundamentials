@@ -3,7 +3,7 @@ Exemplo01:
 
 select*from produtos;
 +------------+----------------+-----------+-------+------+
-| id_produto | nomes_produtos | categoria | preco | peso |
+| id_categoria| nomes_produtos | categoria | preco | peso |
 +------------+----------------+-----------+-------+------+
 |          1 | café           | mercearia |  8.99 |    1 |
 |          2 | Açucar         | Mercearia |  10.2 |    5 |
