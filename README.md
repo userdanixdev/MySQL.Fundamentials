@@ -124,6 +124,19 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  V | F | V
  F | V | V
  F | F | F
+###
+**Operadores Especiais**
+Operador | Sintaxe
+|:---|:---|:---
+`IS NULL` ou `IS NOT NULL` | Testa se o valor é nulo ou não nulo = SELECT * FROM nome_tabela WHERE nome_coluna `IS NULL/IS NOT NULL`.
+`BETWEEN` | Delimita um intervalo de valores p/ Consulta = SELECT * FROM nome_tabela WHERE nome_coluna `BETWEEN` valor_coluna `AND` valor_coluna
+`LIKE` | Define um padrão oara uma cadeira de caracteres definido por `aspas`
+`%` |`coringa` usado como parâmetro do operador `LIKE` para delimitar qualquer sequência de caractere | ` SELECT * FROM nome_tabela WHERE nome_coluna LIKE 'str' - Consulta a primeira string`.
+`_` | `underline` Delimita um único caractere | SELECT * FROM nome_tabela WHERE nome_coluna LIKE `'_str'` - Pula o primeira caractere str e faz consulta da segunda str.
+`%str%` | A consulta é realizada tanto antes como depois da str do meio | SELECT * FROM nome_tabela WHERE nome_coluna LIKE `'%str%'`.
+
+
+ 
  
  
  
