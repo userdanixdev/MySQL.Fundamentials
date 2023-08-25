@@ -126,8 +126,8 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  F | F | F
 ###
 **Operadores Especiais**
-Operador | Sintaxe
-|:---|:---
+Operador | Sintaxe | sintaxe
+|:---|:---|:---
 `IS NULL` ou `IS NOT NULL` | Testa se o valor é nulo ou não nulo = SELECT * FROM nome_tabela WHERE nome_coluna `IS NULL/IS NOT NULL`.
 `BETWEEN` | Delimita um intervalo de valores p/ Consulta = SELECT * FROM nome_tabela WHERE nome_coluna `BETWEEN` valor_coluna `AND` valor_coluna
 `LIKE` | Define um padrão oara uma cadeira de caracteres definido por `aspas`
