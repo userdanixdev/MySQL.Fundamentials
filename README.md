@@ -103,13 +103,27 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  AND (E)| `SELECT` * `FROM` nome_tabela `WHERE` nome_coluna='string' `AND` nome_outra_coluna `>` valor_outra_coluna
  OBS: **Se algum resultado for falso, não terá resultado nem o 1ªtermo e nem o 2ªtermo.**
  
- ***TABELA RACIOCÍNIO LÓGICO - 'AND'**
+ **TABELA RACIOCÍNIO LÓGICO - 'AND'**
  1°termo | 2°termo | Resultado:
  |:---|:---|:---
  Verdadeiro | Verdadeiro |  Verdadeiro
  Verdadeiro | Falso |  Falso
  Falso | Verdadeiro |  Falso
  Falso | Falso |  Falso
+
+ **OPERADOR 'OU' =
+ Operador | Sintaxe
+ |:---|:---
+ 'OR' - 'OU' | `SELECT` * `FROM` nome_tabela `WHERE` qtde_coluna_tabela < valor_coluna `OR` qtde_coluna_tabela > valor_coluna
+ Obs: Se pelo menos um dos termos for verdadeiro, o resultado será **VERDADEIRO**
+
+ OPERADOR OR (OU)
+ 1°Termo | 2°Termo | Resultado:
+ |:---|:---|:---
+ V | V | V
+ V | F | V
+ F | V | V
+ F | F | F
 
  
  
