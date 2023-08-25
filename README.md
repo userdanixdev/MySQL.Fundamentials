@@ -10,12 +10,9 @@
 
 1. Nesse repositório contem os primeiros comandos de banco de dados MySql.
 1. Tutorial baseado nas pratico teórico didáticos do tutor Gustavo Guanabara do Curso em vídeo.
-2. Tutorial baseado nas práticas teórica didática pelo tutor Fábio dos Reis - Fundador da Bóson Treinamentos.
 3. Segue seu canal do Youtube: [Curso em vídeo](https://www.youtube.com/watch?v=Ofktsne-utM)
 5. As aulas do tutor Gustavo são bem didáticas e descontraídas. 
-6. Todo material encontrado aqui tem como base em seu curso ministrado pelo tutor _Gustavo Guanabara_.
 
-_**Inclusive, seus cursos estão sendo muito úteis para a minha carreira.**_
 ***
 
 # Aspectos Gerais 
@@ -90,7 +87,7 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
 > Existem os operadores: `Lógicos`, `Relacionais` e `Especiais`
 >
 
- OPERADORES RELACIONAIS
+ OPERADORES RELACIONAIS - **Utilizados para `comparar` valores entre si**
  Operador | Significado | Significante (sintaxe)
 |:---|:---|:---
  `=` | Igual | `Select` * `FROM` nome_tabela `WHERE` id_coluna = numero_valor_id
@@ -100,7 +97,24 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  `>=`| Maior ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna >= valor_numero_preco
  `<>`| DIFERENTE | `SELECT` * `FROM` nome_tabela `WHERE` id_coluna <> valor_id
 
- OPERADORES LÓGICOS
+ OPERADORES LÓGICOS - **Utilizados para realizar operações que tenham resultado `booleano`** (VERDADEIRO/FALSO)
+ Operador | Sintaxe
+ |:---|:---
+ AND (E)| `SELECT` * `FROM` nome_tabela `WHERE` nome_coluna='string' `AND` nome_outra_coluna `>` valor_outra_coluna
+ OBS: **Se algum resultado for falso, não terá resultado nem o 1ªtermo e nem o 2ªtermo.**
+ 
+ ***TABELA RACIOCÍNIO LÓGICO - 'AND'**
+ 1°termo | 2°termo | Resultado:
+ |:---|:---|:---
+ Verdadeiro | Verdadeiro | = Verdadeiro
+ Verdadeiro | Falso | = Falso
+ Falso | Verdadeiro | = Falso
+ Falso | Falso | = Falso
+
+ 
+ 
+ 
+ 
  
     
 
