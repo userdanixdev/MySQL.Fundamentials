@@ -90,12 +90,12 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  OPERADORES RELACIONAIS - **Utilizados para `comparar` valores entre si**
  Operador | Significado | Significante (sintaxe)
 |:---|:---|:---
- `=` | Igual | `Select` * `FROM` nome_tabela `WHERE` id_coluna = numero_valor_id
- `<` | Menor que | `SELECT` * `FROM` nome_tabela `WHERE` qtd_coluna < valor_qtd
- `<=`| Menor ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna <= valor_numero_preco
- `>` | Maior  | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna > valor_numero_preco
- `>=`| Maior ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna >= valor_numero_preco
- `<>`| DIFERENTE | `SELECT` * `FROM` nome_tabela `WHERE` id_coluna <> valor_id
+ `=` | Igual | `Select` * `FROM` nome_tabela `WHERE` id_coluna `=` numero_valor_id
+ `<` | Menor que | `SELECT` * `FROM` nome_tabela `WHERE` qtd_coluna `<` valor_qtd
+ `<=`| Menor ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna `<=` valor_numero_preco
+ `>` | Maior  | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna `>` valor_numero_preco
+ `>=`| Maior ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna `>=` valor_numero_preco
+ `<>`| DIFERENTE | `SELECT` * `FROM` nome_tabela `WHERE` id_coluna `<>` valor_id
 
  OPERADORES LÓGICOS - **Utilizados para realizar operações que tenham resultado `booleano`** (VERDADEIRO/FALSO)
  Operador | Sintaxe
@@ -106,10 +106,10 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  ***TABELA RACIOCÍNIO LÓGICO - 'AND'**
  1°termo | 2°termo | Resultado:
  |:---|:---|:---
- Verdadeiro | Verdadeiro | = Verdadeiro
- Verdadeiro | Falso | = Falso
- Falso | Verdadeiro | = Falso
- Falso | Falso | = Falso
+ Verdadeiro | Verdadeiro |  Verdadeiro
+ Verdadeiro | Falso |  Falso
+ Falso | Verdadeiro |  Falso
+ Falso | Falso |  Falso
 
  
  
