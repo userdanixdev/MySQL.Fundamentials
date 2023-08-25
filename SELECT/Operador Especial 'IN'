@@ -26,3 +26,13 @@ Result:
 
 Resolução: Com o operador 'in' podemos fazer uma sub-consulta ou consulta aninhada.
 ===============================================================
+Exemplo02:
+O operador especial 'in' pode também operar como uma lista de valores de uma coluna como um conjunto:
+
+select*from produtos where id_categoria in(5,4);
++--------------+----------------+-----------+-------+------+
+| id_categoria | nomes_produtos | categoria | preco | peso |
++--------------+----------------+-----------+-------+------+
+|            4 | Vinho          | Bebida    |  59.9 |  750 |
+|            5 | Refrigerante   | Bebida    |   7.9 |    2 |
++--------------+----------------+-----------+-------+------+
