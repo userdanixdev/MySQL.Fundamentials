@@ -134,8 +134,10 @@ Operador | Sintaxe | sintaxe
 `%` |`coringa` usado como parâmetro do operador `LIKE` para delimitar qualquer sequência de caractere | ` SELECT * FROM nome_tabela WHERE nome_coluna LIKE 'str' - Consulta a primeira string`.
 `_` | `underline` Delimita um único caractere | SELECT * FROM nome_tabela WHERE nome_coluna LIKE `'_str'` - Pula o primeira caractere str e faz consulta da segunda str.
 `%str%` | A consulta é realizada tanto antes como depois da str do meio | SELECT * FROM nome_tabela WHERE nome_coluna LIKE `'%str%'`.
+`IN`| Compara valores de uma coluna em um conjunto (lista) | | `SELECT` * FROM nome_tabela `WHERE` id_coluna `IN` (2,5,15,29)
+`DISTINCT`| Elimina duplicidade na tabela | `SELECT` `DISTINCT` nome_coluna `FROM` nome_tabela
 
-
+fdgfg
  
  
  
