@@ -111,7 +111,7 @@ Para recuperar os dados no repositório é feita a SELEÇÃO =
  Falso | Verdadeiro |  Falso
  Falso | Falso |  Falso
 
- **OPERADOR 'OU' 
+ **OPERADOR 'OU'** 
  Operador | Sintaxe
  |:---|:---
  'OR' - 'OU' | `SELECT` * `FROM` nome_tabela `WHERE` qtde_coluna_tabela < valor_coluna `OR` qtde_coluna_tabela > valor_coluna
