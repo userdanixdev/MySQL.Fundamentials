@@ -56,6 +56,54 @@ Outros exemplos de banco de dados gratuitos: Firebird e PostGreSQL.
 > ***
 # Estrutura Geral de um BD.
 ***
+* SQL é uma linguagem de consulta que implementa as operações de `álgebra relacional`
+* É a linguagem para acesso e manipulação de banco de dados relacionais.
+* Padronizada pela `ANSI - American National Standarts Institute`
+* 
+* _O SQL permite :   > `DEFINIR` a estrutura de dados; 
+                     > `DEFINIR` as `restrições de integridade`;
+                     > `Modificar` dados no BD;
+                     > Especificar as RESTRIÇÕES DE SEGURANÇA;
+                     > Especificar o controle de transações;
+                     > Utilizar Linguagens hospedeiras._
+
+  - Desenvolvida por pesquisadores da `IBM` - System R - Foi inicialmente chamada de `SEQUEL - Structured English Query Language`.
+  - A ISO e ANSI lançam em 1986 a primeira versão SQL-86.
+  - 1992 ocorre a revisão e expansão do padrão gerando o `SQL92`.
+  - 
+    > `ESQUEMA` = Definido por um nome e um identificador de autorização para indicar o usuário dono do esquema.
+    > 
+    > `CREATE SCHEMA ` nome `AUTHORIZATION` daniel_martins
+    > O `ESQUEMA`inclui as tabelas,restrições,visões e domínios.
+  - 1999 - Novos tipos de dados são inseridos nas versões como o CLOB, predicados, abstração de dados.
+  - _Obs: O `SQL-SERVER`em sua sintaxe o `CREATE TABLE` é diferente de `CREATE SCHEMA`.
+          
+          O `MYSQL` em sua sintaxe tanto o `CREATE TABLE` ou `CREATE SCHEMA` é o mesmo comando._
+    
+Para recuperar os dados no repositório é feita a SELEÇÃO = 
+
+                                                            SELECT -a1,a2,aN- (atributos) - colunas
+                                                            FROM r1,r2,rM (relações) - tuplas
+                                                            WHERE -  condições
+                                                            
+`WHERE` - condicional que opera para filtrar o resultado da consulta:
+> Existem os operadores: `Lógicos`, `Relacionais` e `Especiais`
+>
+
+ OPERADORES RELACIONAIS
+ Operador | Significado | Significante (sintaxe)
+|:---|:---|:---
+ `=` | Igual | `Select` * `FROM` nome_tabela `WHERE` id_coluna = numero_valor_id
+ `<` | Menor que | `SELECT` * `FROM` nome_tabela `WHERE` qtd_coluna < valor_qtd
+ `<=`| Menor ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna <= valor_numero_preco
+ `>` | Maior  | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna > valor_numero_preco
+ `>=`| Maior ou igual | `SELECT` * `FROM` nome_tabela `WHERE` preco_coluna >= valor_numero_preco
+ `<>`| DIFERENTE | `SELECT` * `FROM` nome_tabela `WHERE` id_coluna <> valor_id
+
+ OPERADORES LÓGICOS
+ 
+    
+
 
 1. DDL (_Data definition language_) - Linguagem de Definição de Dados ( Estrutura ).
 
