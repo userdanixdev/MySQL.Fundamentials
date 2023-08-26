@@ -24,3 +24,26 @@ SELECT count(*) FROM cursos WHERE carga > 40
 
 Resultado: Irá aparecer o número 6 em uma coluna de COUNT, mostrando que tem 6 registros com carga maior que 40.
 ____________________________________________________________________________________________________________________________________
+
+Exemplo02:
+
+use produtos;
+select*from produtos;
++--------------+----------------+-----------+-------+------+
+| id_categoria | nomes_produtos | categoria | preco | peso |
++--------------+----------------+-----------+-------+------+
+|            1 | café           | mercearia |  8.99 |    1 |
+|            2 | Açucar         | Mercearia |  10.2 |    5 |
+|            3 | Sabão em Pó    | Limpeza   |   9.9 |    1 |
+|            4 | Vinho          | Bebida    |  59.9 |  750 |
+|            5 | Refrigerante   | Bebida    |   7.9 |    2 |
++--------------+----------------+-----------+-------+------+
+E podemos usar na função de agregação count o pseudônimo AS como um nome provisório, sendo assim:
+
+ select count(*) as Total from produtos;
++-------+
+| Total |
++-------+
+|     5 |
++-------+
+=========================================================================================================
