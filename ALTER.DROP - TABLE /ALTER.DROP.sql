@@ -1,3 +1,15 @@
+CREATE, ALTER e DROP TABLES são comandos DDL (data definition language):
+Permitem especificar:
+1. Um conjunto de relações;
+2. Bem como esquema;
+3. Domínio de valores;
+4. Restrições de integridade e;
+5. Conjunto de índices de cada relação.
+
+O ALTER TABLE é usado para adicionar/remover atributos e restrições de uma relação e para alterar a definição de um atributo.
+
+
+
 O Comando DESCRIBE nome_tabela  ou somente DESC nome_tabela (nos mostra a estrutura da tabela).
 
 ALTER TABLE nome_tabela seguido de ADD COLUMN nome_coluna YEAR - COLOQUE O TIPO PRIMITIVO TAMBÉM.
