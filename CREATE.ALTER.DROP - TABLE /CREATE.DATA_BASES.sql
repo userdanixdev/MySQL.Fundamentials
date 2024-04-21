@@ -1,3 +1,6 @@
+## DATA.BASE criado em nuvem para um projeto realizado na plataforma DIO Bootcamps na AZURE CLOUD.
+	
+
 create schema if not exists azure_company;
 use azure_company;
 
