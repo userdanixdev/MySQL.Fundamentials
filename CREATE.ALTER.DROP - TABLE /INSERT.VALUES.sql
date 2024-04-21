@@ -1,3 +1,6 @@
+## DATA.BASE criado em nuvem para um projeto realizado na plataforma DIO Bootcamps na AZURE CLOUD.
+	
+
 use azure_company;
 
 insert into employee values ('John', 'B', 'Smith', 123456789, '1965-01-09', '731-Fondren-Houston-TX', 'M', 30000, 333445555, 5),
