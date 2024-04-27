@@ -11,6 +11,7 @@ Para que ocorra de fato a concessão de privilégios devemos criar um usuário:
   CREATE USER 'ALUNO'@'localhost' IDENTIFIED BY 'aluno';
   GRANT USAGE ON *.* TO 'ALUNO'@'localhost';
   GRANT SELECT ON curso.* TO 'ALUNO'@'localhost';
+  SHOW GRANTS FOR 'ALUNO'@'localhost';
 
 
 
