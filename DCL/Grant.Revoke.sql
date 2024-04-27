@@ -26,6 +26,8 @@ FLUSH PRIVILEGES;
 -- Verificar as permissões que algum usuário  possui:
 SELECT * FROM  mysql.user WHERE  USER ='ALUNO';
 
+# Mostra na tela todos  os privilégios de determinado usuário:
+SHOW GRANTS FOR 'ALUNO'@'%'
 
 
 
