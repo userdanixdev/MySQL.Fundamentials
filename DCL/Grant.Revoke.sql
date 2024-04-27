@@ -16,6 +16,22 @@ Para que ocorra de fato a concessão de privilégios devemos criar um usuário:
 --  Liberar a função INSERT para o usuário: --
 GRANT INSERT ON func_ TO 'ALUNO'@'%';   -- 'func_' é a tabela
 
+-- Concedendo todos os acessos  a todos os objetos:
+GRANT  ALL PRIVILEGES ON *.*  TO  'ALUNO'@'%';   -- Dependendo do servidor, não nos permite  liberar o databases somente a tabela.
+GRANT ALL PRIVILEGES ON func_ TO 'ALUNO'@'%';  -- Liberando todos os privilégios para o usuário aluno a tabela 'func_'
+
+--  RECARREGA OS PRIVILÉGIOS:
+FLUSH PRIVILEGES;
+
+-- Verificar as permissões que algum usuário  possui:
+SELECT * FROM  mysql.user WHERE  USER ='ALUNO';
+
+
+
+
+
+
+
 
 
 
