@@ -14,7 +14,8 @@ Para que ocorra de fato a concessão de privilégios devemos criar um usuário:
   SHOW GRANTS FOR 'ALUNO'@'localhost';
 
 --  Liberar a função INSERT para o usuário: --
-GRANT INSERT ON curso.* TO 'ALUNO'@'%';
+GRANT INSERT ON func_ TO 'ALUNO'@'%';   -- 'func_' é a tabela
+
 
 
 
