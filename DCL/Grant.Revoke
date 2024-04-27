@@ -1,2 +1,6 @@
 Comandos DCL :: Data Controle Language:
 
+GRANT :: Atribui privilégios de acesso do usuário a objetos do banco de dados
+REVOKE :: Remove privilégios de acesso aos objetos obtidos com o comando GRANT.
+
+
