@@ -26,8 +26,17 @@ FLUSH PRIVILEGES;
 -- Verificar as permissões que algum usuário  possui:
 SELECT * FROM  mysql.user WHERE  USER ='ALUNO';
 
-# Mostra na tela todos  os privilégios de determinado usuário:
+-- Mostra na tela todos  os privilégios de determinado usuário:
 SHOW GRANTS FOR 'ALUNO'@'%'
+
+-- Para revogar os privilégios:
+REVOKE SELECT,INSERT ON func_ FROM 'ALUNO'@'%';
+    -- REVOKE + funções  + tabela ou base  de dados FROM
+*** A DIFERENÇA ENTRE O GRANT É  QUE NO FINAL POE  TO E NO REVOKE  FROM ***
+
+
+
+
 
 
 
