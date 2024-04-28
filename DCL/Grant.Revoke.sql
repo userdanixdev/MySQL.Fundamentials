@@ -32,7 +32,8 @@ SHOW GRANTS FOR 'ALUNO'@'%'
 -- Para revogar os privilégios:
 REVOKE SELECT,INSERT ON func_ FROM 'ALUNO'@'%';
     -- REVOKE + funções  + tabela ou base  de dados FROM
-*** A DIFERENÇA ENTRE O GRANT É  QUE NO FINAL POE  TO E NO REVOKE  FROM ***
+*** A DIFERENÇA ENTRE O GRANT É QUE NO FINAL PÕE O TO E NO REVOKE O FROM ***
+
 
 
 
