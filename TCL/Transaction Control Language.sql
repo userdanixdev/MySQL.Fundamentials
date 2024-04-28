@@ -32,3 +32,17 @@ COMMIT ;
 SELECT * FROM cadastro
 --------------------------------//--------------------------//----------------------------//--------------------//-----------------//
 -- *** obs: EM PL/SQL é utilizada comandos TCL ***
+---------------//------------------//---------------------//--------------------------------//-----------------------//--------------
+-- Another example: --
+START TRANSACTION;
+INSERT INTO cadastro VALUES ('Ronaldo',789456111);
+SAVEPOINT P1;  -- <-- Ponto de salvamento
+INSERT INTO cadastro VALUES ('kaka',789456112);
+SAVEPOINT P2; -- < -- Ponto de salvamento
+INSERT INTO cadastro VALUES ('Rivaldo',789456113);
+SAVEPOINT P3; -- < -- Ponto de salvamento
+
+-- Retorna a tabela para o estado em que deseja:
+ROLLBACK SAVEPOINT P2;
+--- Efetivar as transações realizadas:
+COMMIT;
