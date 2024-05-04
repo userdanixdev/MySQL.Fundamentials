@@ -98,6 +98,15 @@ SELECT a.country_id, a.country, (SELECT count(*) FROM city b WHERE a.country_id 
 
 -- Exemplo 04 : databases 'world'
 -- Filtrar a soma da população de cada cidade divididas por sua região:
+use world;
+select * from countrylanguage;
+select * from country;  -- Iremos usar a coluna 'code' e 'population' dessa tabela -- 
+select * from city; -- Iremos usar a coluna 'name' & 'countrycode' & 'population' dessa tabela --
+
+-- Soma da população de todas as cidades separadas por região :
+-- countrylanguage = c  ( coluna 'CountryCode' & 'language'
+-- country = b ( coluna 'name' do pais ' code ')
+-- city = a ( usa a coluna CountryCode e a população da cidade )
 select a.CountryCode, sum(a.population) as total_populacao, (select name from country b where a.CountryCode = b.code) AS pais
 from city a where a.CountryCode in (select c.CountryCode from countrylanguage c where language = 'Spanish') group by a.countrycode;
 
