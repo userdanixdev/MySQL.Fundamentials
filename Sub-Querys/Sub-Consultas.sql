@@ -89,6 +89,13 @@ SELECT title,rating FROM film WHERE film_id IN ( SELECT film_id FROM film_actor 
 | VERTIGO NORTHWEST     | R      |
 | WESTWARD SEABISCUIT   | NC-17  |
 +-----------------------+--------+
+-- Exemplo 03:
+  -- Descobrir quantas cidades tem na região :
+SELECT * FROM country;
+SELECT * FROM city;
+SELECT a.country_id, a.country, (SELECT count(*) FROM city b WHERE a.country_id =  b.country_id) AS qtd_city FROM country a LIMIT 10;
+-- O terminal não consegue compreender esse sintaxe. No Workbench consegue. -- 
+-- 
 
 
 
