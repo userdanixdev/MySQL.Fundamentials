@@ -95,7 +95,46 @@ SELECT * FROM country;
 SELECT * FROM city;
 SELECT a.country_id, a.country, (SELECT count(*) FROM city b WHERE a.country_id =  b.country_id) AS qtd_city FROM country a LIMIT 10;
 -- O terminal não consegue compreender esse sintaxe. No Workbench consegue. -- 
--- 
+
+-- Exemplo 04 : databases 'world'
+-- Filtrar a soma da população de cada cidade divididas por sua região:
+select a.CountryCode, sum(a.population) as total_populacao, (select name from country b where a.CountryCode = b.code) AS pais
+from city a where a.CountryCode in (select c.CountryCode from countrylanguage c where language = 'Spanish') group by a.countrycode;
+
++-------------+-----------------+----------------------+
+| CountryCode | total_populacao | pais                 |
++-------------+-----------------+----------------------+
+| ABW         |           29034 | Aruba                |
+| AND         |           21189 | Andorra              |
+| ARG         |        19996563 | Argentina            |
+| BLZ         |           62915 | Belize               |
+| BOL         |         3378644 | Bolivia              |
+| CAN         |        12673840 | Canada               |
+| CHL         |         9717970 | Chile                |
+| COL         |        20250990 | Colombia             |
+| CRI         |          339131 | Costa Rica           |
+| CUB         |         4629925 | Cuba                 |
+| DOM         |         2438276 | Dominican Republic   |
+| ECU         |         5744142 | Ecuador              |
+| ESP         |        16669189 | Spain                |
+| FRA         |         9244494 | France               |
+| GTM         |         1225188 | Guatemala            |
+| HND         |         1287000 | Honduras             |
+| MEX         |        59752521 | Mexico               |
+| NIC         |         1269223 | Nicaragua            |
+| PAN         |          786755 | Panama               |
+| PER         |        12147242 | Peru                 |
+| PRI         |         1564174 | Puerto Rico          |
+| PRY         |         1020020 | Paraguay             |
+| SLV         |         1138231 | El Salvador          |
+| SWE         |         2891431 | Sweden               |
+| URY         |         1236000 | Uruguay              |
+| USA         |        78625774 | United States        |
+| VEN         |        12251091 | Venezuela            |
+| VIR         |           13000 | Virgin Islands, U.S. |
++-------------+-----------------+----------------------+
+28 rows in set (0.00 sec)
+
 
 
 
