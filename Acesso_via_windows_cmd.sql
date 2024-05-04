@@ -62,5 +62,12 @@ O prompt deverá mostrar: C:\Program Files\MySQL\MySQL Server 8.0\bin>
 
 "MySql -u root -p" + ENTER
 
+Vamos entender o comando acima.
 
+mysql      -- evocamos o servidor
+-h         -- dizemos que o próximo dado é referente ao host
+localhost  -- informamos o o host
+-u         -- dizemos que o próximo dado é referente ao usuário
+root       -- informamos o usuário
+-p         -- dizemos que o próximo dado é referente a senha
 Obrigado.
