@@ -70,7 +70,25 @@ mysql> SELECT title,description,rating,special_features FROM filM WHERE film_id 
 | SPLASH GUMP        | A Taut Saga of a Crocodile And a Boat who must Conquer a Hunter in A Shark Tank                   | PG     | Trailers,Commentaries,Deleted Scenes,Behind the Scenes |
 | WIZARD COLDBLOODED | A Lacklusture Display of a Robot And a Girl who must Defeat a Sumo Wrestler in A MySQL Convention | PG     | Commentaries,Deleted Scenes,Behind the Scenes          |
 +--------------------+---------------------------------------------------------------------------------------------------+--------+--------------------------------------------------------+
-
+-- Usando essa linha de código podemos filtrar os filmes da atriz 'Penelope Guiness' que ela fez diferente da classificação PG, utilizando na sub-query o operador '<>':
+SELECT title,rating FROM film WHERE film_id IN ( SELECT film_id FROM film_actor WHERE actor_id =1 AND rating <> 'PG');
++-----------------------+--------+
+| title                 | rating |
++-----------------------+--------+
+| ANACONDA CONFESSIONS  | R      |
+| ANGELS LIFE           | G      |
+| BULWORTH COMMANDMENTS | G      |
+| CHEAPER CLYDE         | G      |
+| COLOR PHILADELPHIA    | G      |
+| ELEPHANT TROJAN       | PG-13  |
+| GLEAMING JAWBREAKER   | NC-17  |
+| HUMAN GRAFFITI        | NC-17  |
+| KING EVOLUTION        | NC-17  |
+| LANGUAGE COWBOY       | NC-17  |
+| RULES HUMAN           | R      |
+| VERTIGO NORTHWEST     | R      |
+| WESTWARD SEABISCUIT   | NC-17  |
++-----------------------+--------+
 
 
 
