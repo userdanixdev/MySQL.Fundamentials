@@ -125,4 +125,25 @@ SELECT a.nome,c.nome_disc,b.periodo
 
 -- Assim conseguimos verificar quem não está matriculado: Marcos e Matheus --
 
++-------+-------------+------------+
+| nome  | nome_disc   | periodo    |
++-------+-------------+------------+
+| Joao  | Fisica      | Noturno    |
+| Maria | Fisica      | Noturno    |
+| Pedro | Fisica      | Noturno    |
+| Lucas | Fisica      | Matutino   |
+| Joao  | Matemática  | Vespertino |
+| Maria | Matemática  | Vespertino |
+| Lucas | Matemática  | Vespertino |
+| Joao  | Portugues   | Matutino   |
+| Maria | Portugues   | Matutino   |
+| Pedro | Portugues   | Noturno    |
+| Pedro | Quimica     | Noturno    |
+| Lucas | Quimica     | Noturno    |
+| NULL  | Historia    | NULL       |
++-------+-------------+------------+
+
+-- Usando o RIGHT JOIN, irá concatenar os dados da tabela disciplina, sendo assim, iremos forçar a mostrar todos os dados que não
+-- apareceram nem da esquerda e no meio da tabela. Com isso, podemos verificar que existe uma disciplina que não existem alunos matriculado
+-- que é história.
 
