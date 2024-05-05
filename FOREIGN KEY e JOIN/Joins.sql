@@ -64,4 +64,18 @@ INSERT INTO matricula VALUES ('5','4','Noturno');
 -- E a disciplina 5 não tem alunos --
 
 -- INNER JOIN --
+-- INNER JOIN --
+
+-- Tabela alunos como 'a'
+-- Tabela matricula como 'b'
+-- Tabela disciplina como 'c'
+
+SELECT a.nome,c.nome_disc,b.periodo
+	FROM alunos a
+	INNER JOIN matricula b
+		ON a.id_aluno = b.id_aluno  -- ON sempre irá concatenar as chaves
+	INNER JOIN disciplina c
+		ON b.id_disciplina = c.id_disciplina ORDER BY a.nome -- ON sempre irá concatenar as chaves
+
+
 
