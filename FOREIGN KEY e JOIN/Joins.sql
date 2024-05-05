@@ -64,8 +64,6 @@ INSERT INTO matricula VALUES ('5','4','Noturno');
 -- E a disciplina 5 não tem alunos --
 
 -- INNER JOIN --
--- INNER JOIN --
-
 -- Tabela alunos como 'a'
 -- Tabela matricula como 'b'
 -- Tabela disciplina como 'c'
@@ -77,5 +75,54 @@ SELECT a.nome,c.nome_disc,b.periodo
 	INNER JOIN disciplina c
 		ON b.id_disciplina = c.id_disciplina ORDER BY a.nome -- ON sempre irá concatenar as chaves
 
++-------+-------------+------------+
+| nome  | nome_disc   | periodo    |
++-------+-------------+------------+
+| Joao  | Fisica      | Noturno    |
+| Joao  | Matemática  | Vespertino |
+| Joao  | Portugues   | Matutino   |
+| Maria | Fisica      | Noturno    |
+| Maria | Matemática  | Vespertino |
+| Maria | Portugues   | Matutino   |
+| Pedro | Fisica      | Noturno    |
+| Pedro | Portugues   | Noturno    |
+| Pedro | Quimica     | Noturno    |
+| Lucas | Fisica      | Matutino   |
+| Lucas | Matemática  | Vespertino |
+| Lucas | Quimica     | Noturno    |
++-------+-------------+------------+
+
+-- Note que as materias que não tem matrícula e os alunos que não estão matriculados não apareceram:
+-- Para que todos os alunos saiam precisamos fazer um LEFT JOIN, assim podemos verificar quais alunos estão matriculados e os não:
+-- Tudo que está a esquerda da tabela, ou seja, todos os IDs de alunos:
+
+SELECT a.nome,c.nome_disc,b.periodo
+	FROM alunos a
+	LEFT JOIN matricula b
+		ON a.id_aluno = b.id_aluno  -- ON sempre irá concatenar as chaves
+	LEFT JOIN disciplina c
+		ON b.id_disciplina = c.id_disciplina ORDER BY a.nome -- ON sempre irá concatenar as chaves
+
+-- Podemos usar o mesmo script fazendo uma pequena alteração no JOIN substituindo o INNER por LEFT --
++---------+-------------+------------+
+| nome    | nome_disc   | periodo    |
++---------+-------------+------------+
+| Joao    | Fisica      | Noturno    |
+| Joao    | Matemática  | Vespertino |
+| Joao    | Portugues   | Matutino   |
+| Maria   | Fisica      | Noturno    |
+| Maria   | Matemática  | Vespertino |
+| Maria   | Portugues   | Matutino   |
+| Pedro   | Fisica      | Noturno    |
+| Pedro   | Portugues   | Noturno    |
+| Pedro   | Quimica     | Noturno    |
+| Marcos  | NULL        | NULL       |
+| Lucas   | Fisica      | Matutino   |
+| Lucas   | Matemática  | Vespertino |
+| Lucas   | Quimica     | Noturno    |
+| Matheus | NULL        | NULL       |
++---------+-------------+------------+
+
+-- Assim conseguimos verificar quem não está matriculado: Marcos e Matheus --
 
 
