@@ -1,0 +1,5 @@
+-- Joins: Junções
+-- Esta Cláusula é usada para combinar as linhas de duas ou mais tabelas baseado no relacionamento entre elas. -- 
+-- Inner Join ou Somente Join : Retorna registros que têm valores correspondentes em ambas as tabelas
+-- Left Join : Retornar todos os registros das tabela à esquerda e os registros correspondentes da tabela da direita.
+-- Right Join : Retornar todos os registros da tabela da direitas e os registros correspondentes da tabela da esquerda.
