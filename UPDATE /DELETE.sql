@@ -3,4 +3,4 @@ DELETE  FROM minha_tabela -- Apagará todos os dados da tabela, é boa prática 
 DELETE FROM minha_tabela WHERE id = 1 -- Boa prática --
 -- Quanto tem uma tabela auto_increment , deverá depois de apagar os registros alterar a tabela para ela recomeçar a contagem
 DELETE FROM minha_tabela
-ALTER TABLE auto_increment = 1;
+ALTER TABLE minha_tabela auto_increment = 1;
