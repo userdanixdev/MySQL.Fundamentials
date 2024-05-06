@@ -30,4 +30,27 @@ SELECT concat ('Olá ',current_user(),' Seu saldo é R$: ',11.00,' em ',day(now(
 +----------------------------+
 1 row in set (0.00 sec)
 
+-- Com a base de dados Sakila podemos usar o concat_ws direto com variáveis já criadas sem a necessidade de concatenar strings feitas:
+use sakila;
+select concat_ws('--',actor_id,first_name,last_name)retorno from actor limit 10;
+
++-------------------------+
+| retorno                 |
++-------------------------+
+| 1--PENELOPE--GUINESS    |
+| 2--NICK--WAHLBERG       |
+| 3--ED--CHASE            |
+| 4--JENNIFER--DAVIS      |
+| 5--JOHNNY--LOLLOBRIGIDA |
+| 6--BETTE--NICHOLSON     |
+| 7--GRACE--MOSTEL        |
+| 8--MATTHEW--JOHANSSON   |
+| 9--JOE--SWANK           |
+| 10--CHRISTIAN--GABLE    |
++-------------------------+
+10 rows in set (0.00 sec)
+-- REPARE QUE A FUNÇÃO CONCAT_WS INSERI O DELIMITADOR ANTES DE CADA COLUNA '--' --
+
+
+
 
