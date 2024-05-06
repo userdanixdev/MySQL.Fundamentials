@@ -38,3 +38,5 @@ SELECT a.estado,MIN(a.populacao) as pop_min_estados FROM senso a where a.ano = 2
 | Goiás               |            1093 |
 | Distrito Federal    |         2852372 |
 +---------------------+-----------------+
+
+-- Mínimo da região 
