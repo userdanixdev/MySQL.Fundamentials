@@ -1,4 +1,5 @@
 -- upper -- 
+-- O comando 'upper' irá retornar todas as cadeia de caracteres minúsculas em maiúsculas:
 use world;
 select name from country limit 5;
 +-------------+
