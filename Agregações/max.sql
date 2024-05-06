@@ -232,3 +232,5 @@ SELECT a.estado,max(a.populacao) as pop_max_estados FROM senso a where a.ano = 2
 | Roraima             |          314900 |
 | Tocantins           |          265409 |
 +---------------------+-----------------+
+
+
