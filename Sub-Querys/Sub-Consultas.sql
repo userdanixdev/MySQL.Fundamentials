@@ -183,7 +183,79 @@ where language = 'Spanish' group by a.countrycode,b.name;
 | VIR         |           13000 | Virgin Islands, U.S. |
 +-------------+-----------------+----------------------+
 28 rows in set (0.01 sec)
+-- Usando a base de dados senso- queremos a menor e a maior cidade de cada estado do Brasil:
+SELECT a.estado,a.nome_mun,a.populacao 
+FROM ( SELECT b.estado,MAX(b.populacao) as populacao FROM senso b WHERE b.ano = 2014 GROUP BY b.estado)b
+JOIN senso a ON a.estado = b.estado and a.populacao = b.populacao where a.ano = 2014 ORDER BY a.populacao DESC;
 
++---------------------+----------------+-----------+
+| estado              | nome_mun       | populacao |
++---------------------+----------------+-----------+
+| São Paulo           | São Paulo      |  11895893 |
+| Rio de Janeiro      | Rio de Janeiro |   6453682 |
+| Bahia               | Salvador       |   2902927 |
+| Distrito Federal    | Brasília       |   2852372 |
+| Ceará               | Fortaleza      |   2571896 |
+| Minas Gerais        | Belo Horizonte |   2491109 |
+| Amazonas            | Manaus         |   2020301 |
+| Paraná              | Curitiba       |   1864416 |
+| Pernambuco          | Recife         |   1608488 |
+| Rio Grande do Sul   | Porto Alegre   |   1472482 |
+| Pará                | Belém          |   1432844 |
+| Goiás               | Goiânia        |   1412364 |
+| Maranhão            | São Luís       |   1064197 |
+| Alagoas             | Maceió         |   1005319 |
+| Rio Grande do Norte | Natal          |    862044 |
+| Mato Grosso do Sul  | Campo Grande   |    843120 |
+| Piauí               | Teresina       |    840600 |
+| Paraíba             | João Pessoa    |    780738 |
+| Sergipe             | Aracaju        |    623766 |
+| Mato Grosso         | Cuiabá         |    575480 |
+| Santa Catarina      | Joinville      |    554601 |
+| Rondônia            | Porto Velho    |    494013 |
+| Espírito Santo      | Serra          |    476428 |
+| Amapá               | Macapá         |    446757 |
+| Acre                | Rio Branco     |    363928 |
+| Roraima             | Boa Vista      |    314900 |
+| Tocantins           | Palmas         |    265409 |
++---------------------+----------------+-----------+
+27 rows in set (0.11 sec)
+-- Script da menor cidade por estado do Brasil:
+SELECT a.estado,a.nome_mun,a.populacao 
+FROM ( SELECT b.estado,MIN(b.populacao) as populacao FROM senso b WHERE b.ano = 2014 GROUP BY b.estado)b
+JOIN senso a ON a.estado = b.estado and a.populacao = b.populacao where a.ano = 2014 ORDER BY a.populacao DESC;
++---------------------+-----------------------------+-----------+
+| estado              | nome_mun                    | populacao |
++---------------------+-----------------------------+-----------+
+| Distrito Federal    | Brasília                    |   2852372 |
+| Roraima             | São Luiz                    |      7309 |
+| Amazonas            | Japurá                      |      5599 |
+| Acre                | Santa Rosa do Purus         |      5593 |
+| Rio de Janeiro      | Macuco                      |      5380 |
+| Espírito Santo      | Divino de São Lourenço      |      4669 |
+| Amapá               | Pracuúba                    |      4404 |
+| Ceará               | Guaramiranga                |      3812 |
+| Bahia               | Catolândia                  |      3644 |
+| Maranhão            | Junco do Maranhão           |      3539 |
+| Pará                | Bannach                     |      3303 |
+| Mato Grosso do Sul  | Figueirão                   |      3005 |
+| Alagoas             | Pindoba                     |      2958 |
+| Pernambuco          | Fernando de Noronha         |      2884 |
+| Rondônia            | Pimenteiras do Oeste        |      2432 |
+| Sergipe             | Amparo de São Francisco     |      2366 |
+| Paraíba             | São José do Brejo do Cruz   |      1767 |
+| Rio Grande do Norte | Viçosa                      |      1705 |
+| Paraná              | Jardim Olinda               |      1416 |
+| Santa Catarina      | Santiago do Sul             |      1389 |
+| Rio Grande do Sul   | André da Rocha              |      1286 |
+| Piauí               | Miguel Leão                 |      1239 |
+| Goiás               | Anhanguera                  |      1093 |
+| Tocantins           | Oliveira de Fátima          |      1091 |
+| Mato Grosso         | Araguainha                  |      1000 |
+| São Paulo           | Borá                        |       835 |
+| Minas Gerais        | Serra da Saudade            |       822 |
++---------------------+-----------------------------+-----------+
+27 rows in set (0.11 sec)
 
 
 
