@@ -232,5 +232,39 @@ SELECT a.estado,max(a.populacao) as pop_max_estados FROM senso a where a.ano = 2
 | Roraima             |          314900 |
 | Tocantins           |          265409 |
 +---------------------+-----------------+
+-- Número Máximo de população por SIGLA. Para isso é necessário o uso do JOIN para juntar duas tabelas:
+SELECT b.sigla_uf, max(a.populacao) as max_pop_uf from senso a inner join uf b on a.cod_uf = b.cod_uf where ano = 2014 group by b.sigla_uf order by 2 desc;
++----------+------------+
+| sigla_uf | max_pop_uf |
++----------+------------+
+| SP       |   11895893 |
+| RJ       |    6453682 |
+| BA       |    2902927 |
+| DF       |    2852372 |
+| CE       |    2571896 |
+| MG       |    2491109 |
+| AM       |    2020301 |
+| PR       |    1864416 |
+| PE       |    1608488 |
+| RS       |    1472482 |
+| PA       |    1432844 |
+| GO       |    1412364 |
+| MA       |    1064197 |
+| AL       |    1005319 |
+| RN       |     862044 |
+| MS       |     843120 |
+| PI       |     840600 |
+| PB       |     780738 |
+| SE       |     623766 |
+| MT       |     575480 |
+| SC       |     554601 |
+| RO       |     494013 |
+| ES       |     476428 |
+| AP       |     446757 |
+| AC       |     363928 |
+| RR       |     314900 |
+| TO       |     265409 |
++----------+------------+
+27 rows in set (0.02 sec)
 
 
