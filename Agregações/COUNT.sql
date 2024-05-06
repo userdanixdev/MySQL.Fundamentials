@@ -52,5 +52,10 @@ SELECT a.estado,count(a.estado) FROM senso a WHERE a.ano = 2014 GROUP BY a.estad
 | Distrito Federal    |        1 |
 +---------------------+----------+
 27 rows in set (0.02 sec)
+-- Fazer contagem por região :
+SELECT a.regiao,count(*) FROM senso a 
+WHERE ano =2014
+GROUP BY a.regiao 
+ORDER BY 2 desc
 
 
