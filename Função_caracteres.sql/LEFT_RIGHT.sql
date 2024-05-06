@@ -30,7 +30,7 @@ select first_name,
 
 -- Agora com o RIGHT -- Extraindo os 4 últimos caracteres da coluna first_name:
 select first_name,
-        RIGHT(first_name,)4-ultimos_letras 
+        RIGHT(first_name,4)4_ultimos_letras 
 FROM actor
 LIMIT 5;
 +------------+--------------------+
