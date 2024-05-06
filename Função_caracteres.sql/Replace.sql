@@ -48,5 +48,34 @@ SELECT Continent, REPLACE (Continent,'South America','América do Sul')trocado f
 +---------------+-----------------+
 14 rows in set (0.00 sec)
 -- é somente uma consulta, os valores da tabela original não foram alterados, somente para fazer uma tradução para verificar melhor os dados --
+-- Usando o UPDATE com REPLACE : Para isso vamos criar uma tabela e inserir valores nela:
+use curso;
+CREATE TABLE tabela_teste
+(nome VARCHAR(30));
+INSERT INTO tabela_teste VALUES ('José');
+INSERT INTO tabela_teste VALUES ('André');
+INSERT INTO tabela_teste VALUES ('Helém');
+
+SELECT * FROM pessoas;
++---------+
+| pessoas |
++---------+
+| José    |
+| André   |
+| Hélém   |
++---------+
+-- Usando o UPDATE E O REPLACE:
+UPDATE table_test set pessoas = replace(pessoas,'é','e');
+
+Query OK, 3 rows affected (0.00 sec)
+SELECT * FROM table_test;
+
++---------+
+| pessoas |
++---------+
+| Jose    |
+| Andre   |
+| Helem   |
++---------+
 
 
