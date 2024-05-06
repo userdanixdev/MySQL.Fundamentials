@@ -1,9 +1,9 @@
 use world;
 SELECT Continent, 
             count(Population)regions_cont, 
-						SUM(Population)total_pop 
-						FROM country 
-						group BY Continent;
+	    SUM(Population)total_pop 
+	FROM country 
+	group BY Continent;
 
 +---------------+--------------+------------+
 | Continent     | regioes_cont | total_pop  |
