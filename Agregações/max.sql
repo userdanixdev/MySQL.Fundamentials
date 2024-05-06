@@ -164,3 +164,71 @@ select a.regiao,max(a.populacao) as max_pop_regiao from senso a where a.ano = 20
 | RM São Paulo                                                                                                   |       11895893 |
 +----------------------------------------------------------------------------------------------------------------+----------------+
 74 rows in set (0.01 sec)
+-- Máximo da população por estados do Brasil:
+SELECT a.estado,max(a.populacao) as pop_max_estados FROM senso a where a.ano = 2014 GROUP BY a.estado ORDER BY 2;
++---------------------+-----------------+
+| estado              | pop_max_estados |
++---------------------+-----------------+
+| Tocantins           |          265409 |
+| Roraima             |          314900 |
+| Acre                |          363928 |
+| Amapá               |          446757 |
+| Espírito Santo      |          476428 |
+| Rondônia            |          494013 |
+| Santa Catarina      |          554601 |
+| Mato Grosso         |          575480 |
+| Sergipe             |          623766 |
+| Paraíba             |          780738 |
+| Piauí               |          840600 |
+| Mato Grosso do Sul  |          843120 |
+| Rio Grande do Norte |          862044 |
+| Alagoas             |         1005319 |
+| Maranhão            |         1064197 |
+| Goiás               |         1412364 |
+| Pará                |         1432844 |
+| Rio Grande do Sul   |         1472482 |
+| Pernambuco          |         1608488 |
+| Paraná              |         1864416 |
+| Amazonas            |         2020301 |
+| Minas Gerais        |         2491109 |
+| Ceará               |         2571896 |
+| Distrito Federal    |         2852372 |
+| Bahia               |         2902927 |
+| Rio de Janeiro      |         6453682 |
+| São Paulo           |        11895893 |
++---------------------+-----------------+
+27 rows in set (0.02 sec)
+
+-- Utilizando o mesmo script mas ordenado por descendente: 
+SELECT a.estado,max(a.populacao) as pop_max_estados FROM senso a where a.ano = 2014 GROUP BY a.estado ORDER BY 2 desc:
++---------------------+-----------------+
+| estado              | pop_max_estados |
++---------------------+-----------------+
+| São Paulo           |        11895893 |
+| Rio de Janeiro      |         6453682 |
+| Bahia               |         2902927 |
+| Distrito Federal    |         2852372 |
+| Ceará               |         2571896 |
+| Minas Gerais        |         2491109 |
+| Amazonas            |         2020301 |
+| Paraná              |         1864416 |
+| Pernambuco          |         1608488 |
+| Rio Grande do Sul   |         1472482 |
+| Pará                |         1432844 |
+| Goiás               |         1412364 |
+| Maranhão            |         1064197 |
+| Alagoas             |         1005319 |
+| Rio Grande do Norte |          862044 |
+| Mato Grosso do Sul  |          843120 |
+| Piauí               |          840600 |
+| Paraíba             |          780738 |
+| Sergipe             |          623766 |
+| Mato Grosso         |          575480 |
+| Santa Catarina      |          554601 |
+| Rondônia            |          494013 |
+| Espírito Santo      |          476428 |
+| Amapá               |          446757 |
+| Acre                |          363928 |
+| Roraima             |          314900 |
+| Tocantins           |          265409 |
++---------------------+-----------------+
