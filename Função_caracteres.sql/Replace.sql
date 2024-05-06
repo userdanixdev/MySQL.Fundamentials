@@ -11,3 +11,15 @@ replace(@palavra,'ba','mo')para
 | bala | mola |
 +------+------+
 1 row in set (0.00 sec)
+
+-- Uso do replace sem criação de uma variável::
+SELECT 'Isto é teste' de,
+replace ('Isto é teste','teste','produção')para;
+
++---------------+--------------------+
+| de            | para               |
++---------------+--------------------+
+| Isto é teste  | Isto é Produção    |
++---------------+--------------------+
+1 row in set (0.00 sec)
+
