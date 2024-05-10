@@ -1,18 +1,18 @@
 -- Ranking 2 :
 -- Ranking dos estados proporcional a quantidade de cidades da tabela senso:
-SELECT @posicao := @posicao + 1 AS posicao,
-		 prequery.estado,
-		 prequery.qtd_cidades
+SELECT @posicao := @posicao + 1 AS Posição,
+		 prequery.Estado,
+		 prequery.Qtd_cidades
 		 FROM 
 		 (SELECT @posicao := 0)variavel,
-		 (SELECT estado,COUNT(cod_mun)qtd_cidades
+		 (SELECT estado,COUNT(cod_mun)Qtd_cidades
 		 FROM senso 
 		 WHERE ano = 2014
 		 GROUP BY estado
 		 ORDER BY COUNT(cod_mun) DESC) prequery;
 
 +-----------+---------------------+-------------+
-| Posição   | estado              | qtd_cidades |
+| Posição   | Estado              | Qtd_cidades |
 +-----------+---------------------+-------------+
 |         1 | Minas Gerais        |         853 |
 |         2 | São Paulo           |         645 |
