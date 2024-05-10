@@ -30,3 +30,5 @@ select rand();
 +---------------------+
 3 rows in set (0.01 sec)
 
+-- A função ROUND irá arredondar um valor numérico 
+
