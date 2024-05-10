@@ -11,6 +11,7 @@ group by case when a.population < 1000000 then 'pop<1M'
               when a.population >= 100000000 then 'pop>=100M' end 
 
 -- Infelizmente o terminal não conseque mostrar na tela -- 
+-- Use uma interface para o mesmo -- 
 
 
 
