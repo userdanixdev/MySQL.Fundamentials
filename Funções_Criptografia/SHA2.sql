@@ -16,4 +16,17 @@ b5d4045c3f466fa91fe2cc6abe79232a1a57cdf104f7a26e716e0a1e2789df78
 397118fdac8d83ad98813c50759c85b8c47565d8268bf10da483153b747a74743a58a90e85aa9f705ce6984ffc128db567489817e4092d050d8a1cc596ddc119
 
 -- Note o tamanho de cada senha criptografada de acordo com tamanho de hash, crescente --
+-- O armazenamento de caracteres é importante ao definir os campos do bd em relação as senhas criptograficas:
+SELECT LENGTH (SHA2('ABC',224)AS hash224
+LENGTH (SHA2('ABC',256)AS hash256
+LENGTH (SHA2('ABC',384)AS hash384
+LENGTH (SHA2('ABC',512)AS hash512
 
+  +---------+---------+---------+---------+
+| hash224 | hash256 | hash384 | hash512 |
++---------+---------+---------+---------+
+|      56 |      64 |      96 |     128 |
++---------+---------+---------+---------+
+1 row in set (0.01 sec)
+
+  
