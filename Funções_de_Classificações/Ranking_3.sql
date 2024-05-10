@@ -9,3 +9,5 @@ SELECT
 if(@PREV <> estado, @pos_estado :=1,@pos_estado := @pos_estado + 1)
 AS Posição_Estado,@PREV := estado AS Estado, nome_mun AS Município,populacao AS População FROM senso
 ORDER BY estado,populacao DESC
+
+-- A tabela inteira ficaria muito extensa
