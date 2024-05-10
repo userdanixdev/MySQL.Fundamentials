@@ -2,7 +2,7 @@
 -- abs  retornará o valor absoluto numérico --
 -- Exemplo:
 select abs(-1.0)val1,
-		    abs(0.0)val1,
+	abs(0.0)val1,
         abs(-2.0)val1,
         abs(-9.0)val1,
         abs(-5.4)val1,
