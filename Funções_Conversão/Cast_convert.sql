@@ -62,4 +62,24 @@ mysql> select cast(now()as char(4));
 +-----------------------+
 | 2024                  |
 +-----------------------+
+-- Converter tipos de dados com o uso do CONVERT --
+SELECT 'mysql' expressao,
+       cast('mysql' as binary)cast1,
+       convert('mysql' using binary)convert1;
++-----------+--------------+--------------------+
+| expressao | cast1        | convert1           |
++-----------+--------------+--------------------+
+| mysql     | 0x6D7973716C | 0x6D7973716C       |
++-----------+--------------+--------------------+
+1 row in set (0.01 sec)
+--- Convertendo INTEIRO em DECIMAL-- cast -- 
+select @expr1:=1 valor,
+       cast(@expr1 as decimal(10,2))cast1
++-------+-------+
+| valor | cast1 |
++-------+-------+
+|     1 |  1.00 |
++-------+-------+
+
+
 
