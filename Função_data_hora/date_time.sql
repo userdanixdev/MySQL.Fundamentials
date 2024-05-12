@@ -56,6 +56,7 @@ select * from audit_log;
 |  1 | Cadastro      | 2024-05-12 | 20:02:53 |
 |  2 | Atualização   | 2024-05-12 | 20:02:53 |
 +----+---------------+------------+----------+
-2 rows in set (0.01 sec)
+-- REPARE que a coluna foi atualizada -- 
+
 
 
