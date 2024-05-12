@@ -1,4 +1,5 @@
 -- Para verificar a língua padrão da instalação do MySQL -- 
+-- Por default é o inglês americano --
 SELECT @@lc_time_names;
 +-----------------+
 | @@lc_time_names |
