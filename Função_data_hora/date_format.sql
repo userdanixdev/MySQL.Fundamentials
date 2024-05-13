@@ -22,6 +22,17 @@ select date_format(now(), '%D/%M/%y')retorno;
 | 13th/May/24 |
 +-------------+
 1 row in set (0.00 sec)
+-- Note que o retorno da consulta veio 'May', para alterar a linguagem padrão é necessáro modificar:
+set @@lc_time_names = 'PT_br';
+select @@lc_time_names
+ select date_format(now(), '%D/%M/%y')retorno;
++--------------+
+| retorno      |
++--------------+
+| 13th/maio/24 |
++--------------+
+1 row in set (0.02 sec)
+
 
 
 
