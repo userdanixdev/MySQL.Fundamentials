@@ -53,6 +53,14 @@ mysql> select last_update, date_format(last_update, '%M/%Y') from film limit 5;
 | 2006-02-15 05:03:42 | fevereiro/2006                    |
 +---------------------+-----------------------------------+
 5 rows in set (0.00 sec)
+ -- Repare que a função 'monthname' retorna o nome do mês, o formato 'W' como dia da semana, H para horas, 'i' para minutos e 's' para segundos.
+select now() as data_hora,monthname(now()) mês, date_format(now(), '%W/%M/%Y')data1,date_format(now(), '%H:%i:%s')hora;
++---------------------+------+-----------------+----------+
+| data_hora           | mês  | data1           | hora     |
++---------------------+------+-----------------+----------+
+| 2024-05-13 14:02:56 | May  | Monday/May/2024 | 14:02:56 |
++---------------------+------+-----------------+----------+
+1 row in set (0.01 sec)
 
 
 
