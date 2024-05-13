@@ -32,6 +32,28 @@ select @@lc_time_names
 | 13th/maio/24 |
 +--------------+
 1 row in set (0.02 sec)
+-- Assim também é possivel retornar somente o dia, ou mes ou ano. -- e formatar da maneira que quiser.
+select date_format(now(), '%Y')retorno;
++---------+
+| retorno |
++---------+
+| 2024    |
++---------+
+1 row in set (0.01 sec)
+-- Outro exemplo: 
+use sakila;
+mysql> select last_update, date_format(last_update, '%M/%Y') from film limit 5;
++---------------------+-----------------------------------+
+| last_update         | date_format(last_update, '%M/%Y') |
++---------------------+-----------------------------------+
+| 2006-02-15 05:03:42 | fevereiro/2006                    |
+| 2006-02-15 05:03:42 | fevereiro/2006                    |
+| 2006-02-15 05:03:42 | fevereiro/2006                    |
+| 2006-02-15 05:03:42 | fevereiro/2006                    |
+| 2006-02-15 05:03:42 | fevereiro/2006                    |
++---------------------+-----------------------------------+
+5 rows in set (0.00 sec)
+
 
 
 
