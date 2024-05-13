@@ -42,5 +42,14 @@ select now() hoje, date_add(now()),interval "3" hour)as acrescimo;
 | 2024-05-13 02:05:03 | 2024-05-13 05:05:03 |
 +---------------------+---------------------+
 1 row in set (0.02 sec)
+-- Adicionando 15 minutos a partir do horário atual --
+select now()hoje, date_add(now(),interval "15" minute)as acrescimo;
++---------------------+---------------------+
+| hoje                | acrescimo           |
++---------------------+---------------------+
+| 2024-05-13 02:09:01 | 2024-05-13 02:24:01 |
++---------------------+---------------------+
+1 row in set (0.01 sec)
+
 
 
