@@ -61,7 +61,14 @@ select now() as data_hora,monthname(now()) mês, date_format(now(), '%W/%M/%Y')d
 | 2024-05-13 14:02:56 | May  | Monday/May/2024 | 14:02:56 |
 +---------------------+------+-----------------+----------+
 1 row in set (0.01 sec)
-
+-- Trazendo data e hora por extenso:
+ select concat('Hoje é ', date_format(now(),'%d'),' de ',date_format(now(), '%M'),' de ',date_format(now(),'%Y'))data_extenso;
++---------------------------+
+| data_extenso              |
++---------------------------+
+| Hoje é 13 de May de 2024  |
++---------------------------+
+1 row in set (0.00 sec)
 
 
 
