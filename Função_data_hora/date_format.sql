@@ -69,6 +69,39 @@ select now() as data_hora,monthname(now()) mês, date_format(now(), '%W/%M/%Y')d
 | Hoje é 13 de May de 2024  |
 +---------------------------+
 1 row in set (0.00 sec)
+select dayname(curdate())retorno;
++---------+
+| retorno |
++---------+
+| Monday  |
++---------+
+select @@lc_time_names;
++-----------------+
+| @@lc_time_names |
++-----------------+
+| en_US           |
++-----------------+
+1 row in set (0.00 sec)
+
+set @@lc_time_names = 'PT_br';
+Query OK, 0 rows affected (0.00 sec)
+select dayname(curdate())retorno;
++---------+
+| retorno |
++---------+
+| segunda |
++---------+
+-- Repare que eu tive que mudar a lingua padrão para sair o nome do dia em portugues --
+-- Outros exemplos:
+-- Retornando dia do ano --
+select dayofyear(curdate())retorno;
++---------+
+| retorno |
++---------+
+|     134 |
++---------+
+1 row in set (0.01 sec)
+
 
 
 
