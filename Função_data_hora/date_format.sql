@@ -108,4 +108,3 @@ select dayofyear(curdate())retorno;
 
 
 
-
