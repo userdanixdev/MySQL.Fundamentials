@@ -17,6 +17,21 @@ CREATE TABLE artigo (
   			('1001 Dicas no MYSQL','1.Nunca Inicie o MySQL como root...'),
   			('MySQL vs SQL Server','Nesta comparação vamos...'),
   			('Segurança no MYSQL','Quando configurado corretamente, o MySQL...');
+
+
++----+---------------------------+---------------------------------------------+
+| id | titulo                    | corpo                                       |
++----+---------------------------+---------------------------------------------+
+|  1 | MySQL Tutorial            | SGBD MYSQL do zero...                       |
+|  2 | Como utilizar bem o MYSQL | Depois de analisarmos...                    |
+|  3 | Otimizando MySQL          | Neste tutotiral vamos aprender...           |
+|  4 | 1001 Dicas no MYSQL       | 1.Nunca Inicie o MySQL como root...         |
+|  5 | MySQL vs SQL Server       | Nesta comparação vamos...                   |
+|  6 | Segurança no MYSQL        | Quando configurado corretamente, o MySQL... |
++----+---------------------------+---------------------------------------------+
+6 rows in set (0.00 sec)
+
+
   			
 
 
