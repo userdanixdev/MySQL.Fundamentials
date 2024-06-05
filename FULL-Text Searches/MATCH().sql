@@ -105,6 +105,22 @@ select id,match(titulo,corpo) against(@pesquisa in natural language mode) as Sco
 |  6 |                   0 |
 +----+---------------------+
 6 rows in set (0.00 sec)
+-- Podemos inferir que foi encontrado uma maior relevância da variável no ID = 3  --
+-- Podemos deixar ela completa --
+	
+mysql> select id,titulo,corpo, match(titulo,corpo) against (@pesquisa in natural language mode)as Score from artigo;
++----+---------------------------+---------------------------------------------+---------------------+
+| id | titulo                    | corpo                                       | Score               |
++----+---------------------------+---------------------------------------------+---------------------+
+|  1 | MySQL Tutorial            | SGBD MYSQL do zero...                       | 0.22764469683170319 |
+|  2 | Como utilizar bem o MYSQL | Depois de analisarmos...                    |                   0 |
+|  3 | Otimizando MySQL          | Neste tutorial vamos aprender...            | 0.45528939366340637 |
+|  4 | 1001 Dicas no MYSQL       | 1.Nunca Inicie o MySQL como root...         |                   0 |
+|  5 | MySQL vs SQL Server       | Nesta comparação vamos...                   |                   0 |
+|  6 | Segurança no MYSQL        | Quando configurado corretamente, o MySQL... |                   0 |
++----+---------------------------+---------------------------------------------+---------------------+
+6 rows in set (0.00 sec)
+
 
 
 
