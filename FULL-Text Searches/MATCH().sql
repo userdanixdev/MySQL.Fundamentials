@@ -9,6 +9,15 @@ CREATE TABLE artigo (
   FULLTEXT (titulo,corpo))
   ENGINE=InnoDB;
 
+  -- Inserindo dados --
+  INSERT INTO artigo (titulo,corpo) VALUES
+  			('MySQL Tutorial','SGBD MYSQL do zero...'),
+  			('Como utilizar bem o MYSQL','Depois de analisarmos...'),
+  			('Otimizando MySQL','Neste tutotiral vamos aprender...'),
+  			('1001 Dicas no MYSQL','1.Nunca Inicie o MySQL como root...'),
+  			('MySQL vs SQL Server','Nesta comparação vamos...'),
+  			('Segurança no MYSQL','Quando configurado corretamente, o MySQL...');
+  			
 
 
 
