@@ -31,8 +31,47 @@ CREATE TABLE artigo (
 +----+---------------------------+---------------------------------------------+
 6 rows in set (0.00 sec)
 
+  -- Realizando a pesquisa de palavras relevantes dentro da tabela 'artigo'--
+  -- Para isso, cria-se a variável @pesquisa com o valor de 'TUTORIAL' - tudo que estiver junto com esse nome será rastreado --
+  
+SET @pesquisa := 'Tutorial';
+SELECT * FROM artigo 
+	WHERE MATCH (titulo,corpo) 
+	AGAINST (@pesquisa IN NATURAL LANGUAGE MODE);
 
-  			
+mysql> set @pesquisa:='Tutorial';select * from artigo where match (titulo,corpo) against (@pesquisa in natural language mode);
+Query OK, 0 rows affected (0.01 sec)
+
++----+------------------+----------------------------------+
+| id | titulo           | corpo                            |
++----+------------------+----------------------------------+
+|  1 | MySQL Tutorial   | SGBD MYSQL do zero...            |
+|  3 | Otimizando MySQL | Neste tutorial vamos aprender... |
++----+------------------+----------------------------------+
+2 rows in set (0.00 sec)
+
+-- PARA TRAZER QUANTOS REGISTROS FORAM ENCONTRADOS PODEMOS USAR A FUNÇÃO DE AGREGAÇÃO --
+
+set @pesquisa:='Tutorial';   -- Não há necessidade de declarar a variável novamente, a não ser que seja outra palavra
+select count(*) from artigo where match(titulo,corpo) against (@pesquisa in natural language mode);
+
++----------+
+| count(*) |
++----------+
+|        2 |
++----------+
+1 row in set (0.01 sec)
+-- Foram encontrados dois registros --
+-- PODEMOS ENCONTRAR OS REGISTROS COM CONDIÇÃO TAMBÉM --
+SELECT COUNT(IF(MATCH(titulo,corpo) AGAINST (@pesquisa IN NATURAL LANGUAGE MODE),1,NULL))AS contagem FROM artigo;
+
++----------+
+| contagem |
++----------+
+|        2 |
++----------+
+1 row in set (0.00 sec)
+
 
 
 
