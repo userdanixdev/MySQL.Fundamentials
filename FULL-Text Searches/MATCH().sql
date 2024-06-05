@@ -88,6 +88,25 @@ mysql> select id, match(titulo,corpo) against (@pesquisa in natural language mod
 +----+---------------------+
 6 rows in set (0.00 sec)
 
+	
+-- Podemos alterar a variável @pesquisa acrescentando outra palavra e utilizando o mesmo script, colocando o ID em evidência, teremos 
+-- uma relevância maior --
+
+set @pesquisa:='Tutorial Otimizando';
+select id,match(titulo,corpo) against(@pesquisa in natural language mode) as Score from artigo;
++----+---------------------+
+| id | Score               |
++----+---------------------+
+|  1 | 0.22764469683170319 |
+|  2 |                   0 |
+|  3 | 0.45528939366340637 |
+|  4 |                   0 |
+|  5 |                   0 |
+|  6 |                   0 |
++----+---------------------+
+6 rows in set (0.00 sec)
+
+
 
 
 
