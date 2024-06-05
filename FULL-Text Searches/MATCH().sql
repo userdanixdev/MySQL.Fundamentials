@@ -39,7 +39,8 @@ SELECT * FROM artigo
 	WHERE MATCH (titulo,corpo) 
 	AGAINST (@pesquisa IN NATURAL LANGUAGE MODE);
 
-mysql> set @pesquisa:='Tutorial';select * from artigo where match (titulo,corpo) against (@pesquisa in natural language mode);
+mysql> set @pesquisa:='Tutorial';
+select * from artigo where match (titulo,corpo) against (@pesquisa in natural language mode);
 Query OK, 0 rows affected (0.01 sec)
 
 +----+------------------+----------------------------------+
@@ -71,6 +72,22 @@ SELECT COUNT(IF(MATCH(titulo,corpo) AGAINST (@pesquisa IN NATURAL LANGUAGE MODE)
 |        2 |
 +----------+
 1 row in set (0.00 sec)
+
+-- Colocando a coluna ID em evidência, o SGBD trará o score por relevância da palavra	
+
+mysql> select id, match(titulo,corpo) against (@pesquisa in natural language mode)as score from artigo;
++----+---------------------+
+| id | score               |
++----+---------------------+
+|  1 | 0.22764469683170319 |
+|  2 |                   0 |
+|  3 | 0.22764469683170319 |
+|  4 |                   0 |
+|  5 |                   0 |
+|  6 |                   0 |
++----+---------------------+
+6 rows in set (0.00 sec)
+
 
 
 
