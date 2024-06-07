@@ -1,0 +1,2 @@
+-- Tabelas Temporárias --
+-- Siginifica que ela expira assim que sua sessão no MySQL terminar.
