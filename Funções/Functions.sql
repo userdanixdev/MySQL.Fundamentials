@@ -72,4 +72,18 @@ SELECT nome_prod,fn_initcap(nome_prod) FROM produtos;
 +-------------+-----------------------+
 3 rows in set (0.00 sec)
 
+-- CRIANDO UMA FUNLÇÃO DE BOAS VINDAS --
 
+DELIMITER //
+CREATE FUNCTION fn_boas_vindas (usuario VARCHAR(50))
+RETURNS varchar(50)
+RETURN concat('Ola ',usuario,' Seja Bem vindo');
+//
+
+select fn_boas_vindas (user())as Usuario;
++--------------------------------------------+
+| Usuario                                    |
++--------------------------------------------+
+| Ola danixdev@20.242.228.191 Seja Bem vindo |
++--------------------------------------------+
+1 row in set (0.01 sec)
