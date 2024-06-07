@@ -107,5 +107,6 @@ ysql> explain senso;
 15 rows in set (0.00 sec)
 
 -- REPARE QUE A ESTRUTRA DA TABELA TEMPORÁRIA 'tmp_senso2' É A MESMA QUE DA TABELA 'senso' --
+-- PARA DELETAR UMA TABELA TEMPORÁRIA É SÓ SAIR DA SESSÃO OU  'DROP 'nome_da_tabela_tempory' --
 
 
