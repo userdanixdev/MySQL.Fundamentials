@@ -100,6 +100,31 @@ mysql> select * from v_fornec_geral;
 +----------+-----------+-----------------+
 8 rows in set (0.01 sec)
 
+-- Inserindo mais registros --
+-- Ao inserir mais registros em quaisquer tabela, a view automaticamente é atualizada também --
+
+insert fornec_4 values ('476','Norway');
+insert fornec_4 values ('522','Netherlands');
+
+-- Fazendo a consulta na view novamente, veremos que os novos registros inseridos acima foram computados:
+mysql> select * from v_fornec_geral;
++----------+-----------+-----------------+
+| origem   | id_fornec | fornec          |
++----------+-----------+-----------------+
+| fornec_1 |         5 | BrazilianLtd    |
+| fornec_1 |       150 | CalifornianCorp |
+| fornec_2 |       231 | FarEast         |
+| fornec_2 |       280 | NZ              |
+| fornec_3 |       321 | EuroGroup       |
+| fornec_3 |       442 | UKArchip        |
+| fornec_4 |       475 | India           |
+| fornec_4 |       476 | Norway          |
+| fornec_4 |       521 | Afrique         |
+| fornec_4 |       522 | Netherlands     |
++----------+-----------+-----------------+
+10 rows in set (0.00 sec)
+
+
 
 
 
