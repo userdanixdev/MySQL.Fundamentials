@@ -41,3 +41,70 @@ INSERT fornec_3 values ('442','UKArchip');
 -- Inserindo valores para os fornecedores 4:
 INSERT fornec_4 values ('475','India');
 INSERT fornec_4 values ('521','Afrique');
+
+-- Usando o UNION all podemos juntar todas as tabelas de fornecedores criando uma view --
+CREATE VIEW v_fornec_geral
+as 
+select id_fornec,fornec from fornec_1
+UNION ALL
+select id_fornec,fornec from fornec_2
+UNION ALL
+select id_fornec,fornec from fornec_3
+UNION ALL
+select id_fornec,fornec from fornec_4
+
+-- Vamos consultar a view, já que ela foi criada --
+
+select * from v_fornec_geral
+
+mysql> select * from v_fornec_geral;
++-----------+-----------------+
+| id_fornec | fornec          |
++-----------+-----------------+
+|         5 | BrazilianLtd    |
+|       150 | CalifornianCorp |
+|       231 | FarEast         |
+|       280 | NZ              |
+|       321 | EuroGroup       |
+|       442 | UKArchip        |
+|       475 | India           |
+|       521 | Afrique         |
++-----------+-----------------+
+8 rows in set (0.00 sec)
+-- Porém , na tabela unificada não existe uma identificação de cada fornecedor. Podemos deletar a view : 'drop view v_fornec_geral' ou alterar a view:
+
+ALTER VIEW v_fornec_geral
+as
+SELECT 'fornec_1' as origem, id_fornec,fornec from fornec_1
+UNION ALL
+SELECT 'fornec_2' as origem, id_fornec,fornec from fornec_2
+UNION ALL
+SELECT 'fornec_3' as origem, id_fornec,fornec from fornec_3
+UNION ALL
+SELECT 'fornec_4' as origem, id_fornec,fornec from fornec_4
+
+-- podemos reaproveitar o código e fazer a alteração criando um campo adicional 'origem':
+
+mysql> select * from v_fornec_geral;
++----------+-----------+-----------------+
+| origem   | id_fornec | fornec          |
++----------+-----------+-----------------+
+| fornec_1 |         5 | BrazilianLtd    |
+| fornec_1 |       150 | CalifornianCorp |
+| fornec_2 |       231 | FarEast         |
+| fornec_2 |       280 | NZ              |
+| fornec_3 |       321 | EuroGroup       |
+| fornec_3 |       442 | UKArchip        |
+| fornec_4 |       475 | India           |
+| fornec_4 |       521 | Afrique         |
++----------+-----------+-----------------+
+8 rows in set (0.01 sec)
+
+
+
+
+
+
+
+
+
