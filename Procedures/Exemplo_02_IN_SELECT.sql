@@ -79,8 +79,8 @@ select* from material;
 delimiter //
 CREATE PROCEDURE proc_qtd_val(p_cod_mat INT)
 	begin 
-		select a.nome,a.custo,b.qtd,a.custo*b.qtd as total
-		from material b
+		select a.nome,a.custo,b.qtd,a.custo*b.qtd as total  -- Repare no select aqui custo do material da tabela a X a quantidade de estoque b.
+		from material a
 		inner join estoque b
 		on a.cod_mat=b.cod_mat
 		where a.cod_mat=p_cod_mat;
