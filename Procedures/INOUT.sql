@@ -6,7 +6,7 @@ begin
   set valor = valor+valor*taxa/100
 end //
 delimiter ;
--- Variáveis que recebem pregfixo INOUT recebem um valor e retornam outro --
+-- Variáveis que recebem pregfixo INOUT recebem dois parâmetros IN - variável de execução e OUT saída da variável de execução:
 -- Criando uma variável --
 
 set @valor=50.00;
@@ -19,7 +19,7 @@ select @valor;
 |  62.50 |
 +--------+
 1 row in set (0.00 sec)
--- Ocorre que a procedure 'proc_aumento' transforma a variável com o aumento desejável. A variável de execução 'taxa' é o aumento.
+-- Ocorre que a procedure 'proc_aumento' transforma a variável com o aumento desejável. A variável de execução 'taxa' é o aumento, consierado o segundo parâmetro para saída.
 
 
 
