@@ -51,6 +51,32 @@ CALL proc_ajust_custo(2,37);
 |       5 | Play3         |  700.00 |
 +---------+---------------+---------+
 5 rows in set (0.00 sec)
+-- Fazendo um ajuste de desconto no mesmo produto --
+delimiter //
+create procedure proc_ajust_custo_3(in p_cod_mat INT,
+				     taxa DECIMAL (10,2))
+	BEGIN 
+		UPDATE material set custo=custo-custo*taxa/100
+		where cod_mat=p_cod_mat;
+	END //
+delimiter //
+
+CALL proc_ajust_custo_3(2,10);
+
+select* from material;
++---------+---------------+---------+
+| cod_mat | nome          | custo   |
++---------+---------------+---------+
+|       1 | XBOX          | 1500.00 |
+|       2 | Playstation 5 | 3699.00 | -- <- 10% de desconto nesse material 
+|       3 | XBOX360       | 2000.00 |
+|       4 | Play 4        | 1000.00 |
+|       5 | Play3         |  686.07 |
++---------+---------------+---------+
+5 rows in set (0.00 sec)
+
+
+
 
 
 
