@@ -54,7 +54,7 @@ CALL proc_cidades_uf(@var_uf);
 +-------------------+-----------+--------+
 10 rows in set (0.01 sec)
 
-
+-- Para dropar uma procedure :  DROP PROCEDURE proc_cidades_uf --
 
 
 
