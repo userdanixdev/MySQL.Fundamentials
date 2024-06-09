@@ -35,6 +35,27 @@ call proc_cidades_uf_(35);
 
 Query OK, 0 rows affected (0.01 sec)
 
+-- Podemos também, da mesma forma, declarando uma varíavel --
+SET @var_uf='13';
+CALL proc_cidades_uf(@var_uf);
++-------------------+-----------+--------+
+| nome_mun          | populacao | cod_uf |
++-------------------+-----------+--------+
+| Alvarães          |     14080 | 13     |
+| Amaturá           |      9657 | 13     |
+| Anamã             |     10193 | 13     |
+| Anori             |     16289 | 13     |
+| Apuí              |     18059 | 13     |
+| Atalaia do Norte  |     15149 | 13     |
+| Autazes           |     31876 | 13     |
+| Barcelos          |     25715 | 13     |
+| Barreirinha       |     27361 | 13     |
+| Benjamin Constant |     33391 | 13     |
++-------------------+-----------+--------+
+10 rows in set (0.01 sec)
+
+
+
 
 
 
