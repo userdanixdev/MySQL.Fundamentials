@@ -75,6 +75,60 @@ select* from material;
 +---------+---------------+---------+
 5 rows in set (0.00 sec)
 
+-- Usando SELECT nas procedures --
+delimiter //
+CREATE PROCEDURE proc_qtd_val(p_cod_mat INT)
+	begin 
+		select a.nome,a.custo,b.qtd,a.custo*b.qtd as total
+		from material b
+		inner join estoque b
+		on a.cod_mat=b.cod_mat
+		where a.cod_mat=p_cod_mat;
+		select 'Consulta realizada com sucesso' as MSG;
+end//
+delimiter ;
+
+mysql> select * from material;
++---------+---------------+---------+
+| cod_mat | nome          | custo   |
++---------+---------------+---------+
+|       1 | XBOX          | 1500.00 |
+|       2 | Playstation 5 | 3699.00 |
+|       3 | XBOX360       | 2000.00 |
+|       4 | Play 4        |  900.00 |
+|       5 | Play3         |  686.07 |
++---------+---------------+---------+
+5 rows in set (0.00 sec)
+
+mysql> select * from estoque;
++---------+-----+
+| cod_mat | qtd |
++---------+-----+
+|       1 |  12 |
+|       2 |  29 |
+|       3 |  33 |
+|       4 |  54 |
+|       5 |  20 |
++---------+-----+
+5 rows in set (0.01 sec)
+
+call proc_qtd_val(1);
++------+---------+-----+----------+
+| nome | custo   | qtd | total    |
++------+---------+-----+----------+
+| XBOX | 1500.00 |  12 | 18000.00 |
++------+---------+-----+----------+
+1 row in set (0.00 sec)
+
++--------------------------------+
+| MSG                            |
++--------------------------------+
+| Consulta realizada com sucesso |
++--------------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
 
 
 
